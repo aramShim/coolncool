@@ -1,0 +1,471 @@
+@charset "utf-8";
+
+/*sub 공통*/
+.sub-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sub-top-wrap {
+  /* overflow: hidden; */
+  position: relative;
+}
+.sub-top-wrap .sub-top {
+  height: 430px;
+}
+.sub-top-wrap .badge-type-title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.badge-type-title .badge {
+  position: absolute;
+  bottom: -18px;
+  padding: 4px 26px;
+  background-color: #0049b4;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 20px;
+}
+.text-blue {
+  color: #0049b4;
+}
+.sub-section {
+  padding: 60px 0 120px;
+}
+.sub-title-wrap {
+  position: relative;
+}
+.sub-title-wrap h3 {
+  font-size: 52px;
+}
+.sub-title-wrap .ko-info {
+  font-weight: 900;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.sub-title-wrap .en-inco {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.sub-title-wrap .go-home {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+}
+.business-wrap {
+  margin-top: 56px;
+}
+.business-list-wrap {
+  gap: 16px;
+}
+.business-list-wrap li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  color: #fff;
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.business-list-wrap li a img {
+  position: relative;
+  z-index: 8;
+}
+.business-list-wrap li a:hover .business-hover,
+.business-list-wrap li.current a .business-hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.business-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  opacity: 0.4;
+}
+.business-hover span {
+  text-decoration: underline;
+}
+.business-hover p {
+  font-size: 24px;
+  padding-top: 8px;
+}
+.business-section {
+  margin-top: 56px;
+  text-align: center;
+}
+.bs-section-title b {
+  font-size: 68px;
+}
+.bs-section-title .bs-title {
+  font-size: 28px;
+}
+.bs-section-title .bs-title small {
+  font-size: 0.57em;
+}
+.bs-title-info {
+  font-weight: bold;
+  font-size: 20px;
+}
+.bs-img {
+  margin: 56px 0;
+}
+.bs-sub-text {
+  font-size: 20px;
+}
+.bs-sub-text .en-sub {
+  line-height: 1.2;
+  padding: 8px 0 24px;
+}
+.bs-sub-text .ko-sub {
+  font-weight: bold;
+}
+.bs-icon-wrap {
+  margin-top: 56px;
+}
+.bs-icon-wrap.flex {
+  flex-wrap: wrap;
+}
+.bs-icon-wrap li {
+  padding: 24px 0;
+  gap: 16px;
+}
+.bs-icon-img {
+  height: 120px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.bs-icon-wrap span {
+  text-transform: uppercase;
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+  color: #0049b4;
+  padding-top: 24px;
+  line-height: 1.3;
+}
+
+/********************************************
+  비즈니스
+*********************************************/
+/*sub top 이미지*/
+.sub-top-wrap.business {
+  background: transparent url(../images/sub-banner-business.png) no-repeat 50% 0 /
+    100% auto;
+}
+.bs-icon-wrap.flex.ad li {
+  width: 20%;
+}
+.bs-icon-wrap.flex.bpo li {
+  flex: 1;
+}
+.bs-icon-wrap.flex.contents li {
+  width: 20%;
+}
+/********************************************
+  브랜드
+*********************************************/
+.sub-top-wrap.brand {
+  background: transparent url(../images/sub-banner-brand.png) no-repeat 50% 0 /
+    100% auto;
+}
+.sales-wrap {
+  padding: 72px 0;
+}
+.sales-wrap .side-wrap {
+  width: 15%;
+  position: sticky;
+}
+.sales-wrap .side-wrap h4 {
+  padding-top: 16px;
+  font-size: 32px;
+  text-decoration: underline;
+}
+.sales-wrap .sales-list-wrap {
+  width: 85%;
+}
+.sales-list.flex {
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 16px 0;
+}
+.logo-img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+.sales-list li {
+  margin-left: -1px;
+  max-width: 50%;
+}
+.sales-list li > a .brand-img {
+  overflow: hidden;
+}
+.sales-list li > a .brand-img img {
+  transition: all 0.6s;
+}
+.sales-list li > a:hover .brand-img img {
+  transform: scale(1.1);
+}
+.sales-list li > a:hover .logo-img {
+  opacity: 1;
+}
+
+/********************************************
+  컴퍼니
+*********************************************/
+.sub-top-wrap.company {
+  background: transparent url(../images/sub-banner-company.png) no-repeat 50% 0 /
+    100% auto;
+}
+.sub-top-wrap.company + .sub-section {
+  padding-bottom: 0;
+}
+
+.company-video {
+  margin-top: 72px;
+  text-align: center;
+  background-image: linear-gradient(to top, #f6f6f6 50%, #fff 50%);
+}
+.company-video a {
+  display: inline-block;
+  max-width: 1200px;
+}
+.company-video a:hover .play-btn {
+  opacity: 1;
+}
+.company-video a > img {
+  width: 100%;
+}
+.company-video .play-btn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.company-text-wrap {
+  background: #f6f6f6;
+  padding: 64px 0;
+}
+.company-text-wrap .company-sub-text {
+  text-align: center;
+}
+.company-sub-text .en-title {
+  font-size: 26px;
+}
+.company-sub-text .neo-800 {
+  font-size: 24px;
+}
+.company-sub-text .ko-sub {
+  padding: 24px 0;
+  font-size: 18px;
+}
+.company-text-wrap .grid {
+  margin: 64px 0;
+  padding: 32px 0;
+  gap: 48px 0;
+}
+.company-text-wrap ul .no {
+  width: 100px;
+  height: 100px;
+  border: 1px dashed #0049b4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-text-wrap ul .no .no-text {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0049b4;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: underline;
+}
+.company-text-wrap .text-wrap {
+  padding-left: 24px;
+  padding-top: 16px;
+}
+.company-text-wrap .text-wrap .neo-800 {
+  font-size: 22px;
+}
+.company-text-wrap .text-wrap .en-300 {
+  font-size: 18px;
+}
+.company-text-wrap .text-wrap .ko-info {
+  padding-top: 16px;
+  font-size: 15px;
+}
+.achievement-wrap {
+  padding: 120px 0;
+}
+.achive-title {
+  margin-bottom: 54px;
+}
+.achive-title h3 {
+  font-size: 62px;
+}
+.swiper-control-btn {
+  gap: 0 12px;
+}
+.swiper-control-btn button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #252525;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.swiper-control-btn button:hover {
+  opacity: 1;
+}
+
+.achieve-item .img-wrap {
+  height: 350px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.achieve-item .award-text {
+  padding-top: 24px;
+  text-align: center;
+  font-size: 18px;
+}
+.achieve-item .award-text span {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #808080;
+}
+
+.best-choice-wrap {
+}
+.best-choice-wrap {
+  background: url(/images/company-bg.png) no-repeat 50% 0 / 100% auto;
+  padding: 60px 0;
+  color: #fff;
+}
+.best-title {
+  text-align: center;
+  padding-top: 60px;
+}
+.best-title .en-600 {
+  font-size: 28px;
+}
+.best-title .neo-700 {
+  font-size: 24px;
+}
+.best-ko-info {
+  color: #a4c5f6;
+  padding: 32px 0;
+}
+.best-ko-info .emp {
+  color: #fff;
+}
+.best-choice-wrap ul.flex {
+  gap: 0 16px;
+  margin: 36px 0;
+  text-align: center;
+}
+.best-choice-wrap ul.flex .best-info {
+  padding: 16px 0;
+  font-weight: bold;
+}
+.best-choice-wrap ul.flex .best-info span {
+  color: #a4c5f6;
+  font-size: 0.9em;
+}
+.best-choice-wrap ul.flex .best-info p {
+  padding-top: 8px;
+}
+
+/********************************************
+  컨택트
+*********************************************/
+.sub-top-wrap.contact {
+  background: transparent url(../images/sub-banner-contact.png) no-repeat 50% 0 /
+    100% auto;
+}
+.sub-top-wrap.contact + .sub-section {
+  padding-bottom: 0;
+}
+.contact-wrap {
+  margin-top: 120px;
+}
+.map-wrap {
+  overflow: hidden;
+}
+.contact {
+  background-image: linear-gradient(to right, #f6f6f6 40%, #fff 60%);
+}
+.contact-cnc {
+  background: #f6f6f6;
+  width: 40%;
+  box-sizing: border-box;
+  padding: 72px 0px;
+}
+.contact-cnc strong {
+  text-transform: uppercase;
+  font-size: 56px;
+  line-height: 1.1;
+  display: block;
+  padding-bottom: 86px;
+}
+.width-img {
+  top: 170px;
+}
+.cnc-logo {
+  max-width: 260px;
+}
+.contact-info {
+  background: #fff;
+  padding: 80px 0 80px 80px;
+  box-sizing: border-box;
+}
+.cnc-office {
+  padding: 40px 0;
+}
+.office-address {
+  font-size: 18px;
+  padding: 6px 0 4px;
+}
+.cnc-office .en-400 {
+  line-height: 1.2;
+}
+.tel-info li {
+  padding: 8px 0;
+}
+.tel-info li b {
+  font-size: 18px;
+}
+.tel-info li:not(:last-child) {
+  letter-spacing: 1px;
+}
+.tel-info li b .text-blue {
+  display: inline-block;
+  padding-right: 16px;
+}
