@@ -6,6 +6,7 @@
       content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes"
       name="viewport"
     />
+
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <meta content="telephone=no" name="format-detection" />
     <!--네이버 서치어드바이저-->
@@ -43,12 +44,10 @@
     <!--// header/footer include-->
 
     <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
     <script src="js/ui.js"></script>
-    <!--js-->
-
     <!-- content script -->
     <link
       rel="apple-touch-icon"
@@ -145,12 +144,22 @@
         <div class="sub-top-wrap company">
           <div class="sub-top">
             <div class="badge-type-title sub-inner">
-              <h2 class="badge en-600">Company</h2>
+              <h2
+                class="badge en-600"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                Company
+              </h2>
             </div>
           </div>
         </div>
         <section class="sub-section">
-          <div class="sub-title-wrap sub-inner">
+          <div
+            class="sub-title-wrap sub-inner"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <h3 class="en-600">Accelerate Brand Excellence</h3>
             <p class="ko-info">
               쿨앤쿨은
@@ -172,7 +181,7 @@
             </a>
           </div>
 
-          <div class="company-wrap">
+          <div class="company-wrap" data-aos="fade-up" data-aos-delay="500">
             <div class="company-video">
               <a
                 class="fancybox relative"
@@ -187,7 +196,11 @@
             </div>
             <div class="company-text-wrap">
               <div class="sub-inner">
-                <div class="company-sub-text">
+                <div
+                  class="company-sub-text"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   <p class="en-700 en-title">
                     Unrivaled competitiveness, Cool&Cool is all you need.
                   </p>
@@ -203,7 +216,11 @@
                     상품을 노출하고 안정적이고 효과적으로 성장할 수 있습니다.
                   </p>
                 </div>
-                <ul class="grid grid-cols-2">
+                <ul
+                  class="grid grid-cols-2"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
                   <li class="flex">
                     <div class="no"><span class="no-text en-500">01</span></div>
                     <div class="text-wrap">
@@ -273,7 +290,11 @@
             </div>
             <div class="achievement-wrap">
               <div class="sub-inner overflow-hidden">
-                <div class="achive-title flex items-center justify-between">
+                <div
+                  class="achive-title flex items-center justify-between"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   <h3 class="en-700">Our Achievements</h3>
                   <div class="swiper-control-btn flex items-center">
                     <button class="btn-swiper-prev" type="button" tabindex="-1">
@@ -284,7 +305,11 @@
                     </button>
                   </div>
                 </div>
-                <div class="achieve-swiper">
+                <div
+                  class="achieve-swiper"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="achieve-item flex flex-col items-center">
@@ -362,7 +387,7 @@
             </div>
             <div class="best-choice-wrap">
               <div class="sub-inner">
-                <div class="best-title">
+                <div class="best-title" data-aos="fade-up" data-aos-delay="300">
                   <p class="en-600">The best choice for global brands.</p>
                   <p class="neo-700">
                     쿨앤쿨은 글로벌 브랜드사에게 최상의 선택입니다.
@@ -373,7 +398,7 @@
                     을 원하는 글로벌 브랜드사에게 최적화된 파트너입니다.
                   </p>
                 </div>
-                <ul class="flex">
+                <ul class="flex" data-aos="fade-up" data-aos-delay="400">
                   <li>
                     <div class="img-wrap">
                       <img src="images/company-brand-lego.png" alt="레고" />

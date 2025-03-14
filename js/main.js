@@ -26,15 +26,15 @@ $(window).on("load", function () {
 });
 
 function brandVisualSlider() {
-  let delay = 6965;
+  let delay = 5000;
   let brandVisual = new Swiper(".brand-visual", {
     loop: true,
     speed: 600,
-    // autoplay: {
-    //   delay: delay,
-    //   disableOnInteraction: false,
-    // },
-    autoplay: false,
+    autoplay: {
+      delay: delay,
+      disableOnInteraction: false,
+    },
+    // autoplay: false,
 
     observeParents: true,
     observeSlideChildren: true,

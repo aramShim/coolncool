@@ -25,7 +25,7 @@ $(document).ready(function () {
   }
   AOS.init({
     duration: 600,
-    once: true,
+    once: false,
   });
 });
 //레니스

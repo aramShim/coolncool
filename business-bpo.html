@@ -6,6 +6,7 @@
       content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes"
       name="viewport"
     />
+
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <meta content="telephone=no" name="format-detection" />
     <!--네이버 서치어드바이저-->
@@ -43,12 +44,10 @@
     <!--// header/footer include-->
 
     <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
     <script src="js/ui.js"></script>
-    <!--js-->
-
     <!-- content script -->
     <link
       rel="apple-touch-icon"
@@ -139,12 +138,18 @@
         <div class="sub-top-wrap business">
           <div class="sub-top">
             <div class="badge-type-title sub-inner">
-              <h2 class="badge en-600">Business</h2>
+              <h2
+                class="badge en-600"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                Business
+              </h2>
             </div>
           </div>
         </div>
         <section class="sub-inner sub-section">
-          <div class="sub-title-wrap">
+          <div class="sub-title-wrap" data-aos="fade-up" data-aos-delay="300">
             <h3 class="en-600">Irreplaceable Service</h3>
             <p class="ko-info">
               <span class="text-blue">AI의 기술력과 전문가의 경험</span>
@@ -160,7 +165,11 @@
           </div>
 
           <div class="business-wrap">
-            <ul class="business-list-wrap grid grid-cols-3">
+            <ul
+              class="business-list-wrap grid grid-cols-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <li>
                 <a href="/business-ad.html">
                   <img src="images/business01.png" alt="" />
@@ -218,7 +227,11 @@
             </ul>
 
             <div class="business-section business-section01">
-              <div class="bs-section-title">
+              <div
+                class="bs-section-title"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <b class="en-800">02</b>
                 <p class="bs-title">
                   <span class="en-700">Commerce Sales : BPO</span>
@@ -226,10 +239,10 @@
                 </p>
                 <p class="bs-title-info">커머스 세일즈 (위탁운영)</p>
               </div>
-              <div class="bs-img">
+              <div class="bs-img" data-aos="fade-up" data-aos-delay="300">
                 <img src="images/sub-business-02.png" alt="" />
               </div>
-              <div class="bs-sub-text">
+              <div class="bs-sub-text" data-aos="fade-up" data-aos-delay="300">
                 <p class="text-blue en-700 en-title">
                   Focus on what truly matters
                 </p>
@@ -243,7 +256,11 @@
                   브랜드몰 또는 플랫폼 운영대행 (고정+매출 연동 수수료)
                 </p>
               </div>
-              <ul class="bs-icon-wrap flex justify-between bpo">
+              <ul
+                class="bs-icon-wrap flex justify-between bpo"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <li class="">
                   <div class="bs-icon-img">
                     <img src="images/icon/icon1.png" alt="" />
