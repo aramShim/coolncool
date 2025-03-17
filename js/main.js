@@ -30,11 +30,11 @@ function brandVisualSlider() {
   let brandVisual = new Swiper(".brand-visual", {
     loop: true,
     speed: 600,
-    autoplay: {
-      delay: delay,
-      disableOnInteraction: false,
-    },
-    // autoplay: false,
+    // autoplay: {
+    //   delay: delay,
+    //   disableOnInteraction: false,
+    // },
+    autoplay: false,
 
     observeParents: true,
     observeSlideChildren: true,

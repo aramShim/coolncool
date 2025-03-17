@@ -2,16 +2,21 @@ $(document).ready(function () {
   respond();
   $(window).on("resize", function () {
     respond();
+    achievementSwiper.destroy();
+    companyAchievements();
   });
   $(window).on("scroll", function () {
     scrolled();
   });
 
-  topMenu();
-  topMenu_m();
-  moMenuAccordion();
+  if ($("html.pc").length > 0) {
+    topMenu();
+  }
+  if ($("html.mobile").length > 0) {
+    topMenu_m();
+  }
+
   scrolled();
-  goTopMove();
 
   familySiteSelect();
   if ($(".fancybox").length > 0) {
@@ -29,21 +34,10 @@ $(document).ready(function () {
   });
 });
 //레니스
-// const lenis = new Lenis({
-//   autoRaf: true,
-// });
-gsap.registerPlugin(ScrollTrigger);
-
 const lenis = new Lenis({
   duration: 1.2,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
 });
-
-function raf(time) {
-  lenis.raf(time);
-  ScrollTrigger.update();
-  requestAnimationFrame(raf);
-}
 
 requestAnimationFrame(raf);
 
@@ -58,56 +52,11 @@ function mobileLayout() {
 
 function pcLayout() {
   $("html").removeClass("mobile").addClass("pc");
-}
-
-function goTopMove() {
-  if ($(".go-top").length < 1) {
-    return;
-  }
-
-  const $btn = $(".go-top");
-  const $window = $(window);
-  const $footer = $("#footer");
-  const bottom_origin = $("html").hasClass("pc") ? 40 : 20;
-  const checkY = $("html").hasClass("pc") ? 600 : 300;
-  let scrollY = $window.scrollTop();
-  let bottom;
-  let gap;
-  let vh = window.innerHeight * 0.01;
-  let window_height = vh * 100;
-
-  $btn.on("click", function (e) {
-    e.preventDefault();
-    $window.scrollTop(0);
-  });
-
-  $window.on("scroll", function () {
-    btnPosition();
-  });
-  $window.on("resize", function () {
-    btnPosition();
-  });
-
-  function btnPosition() {
-    vh = window.innerHeight * 0.01;
-    window_height = vh * 100;
-
-    scrollY = $(this).scrollTop();
-    scrollY > checkY ? $btn.addClass("on") : $btn.removeClass("on");
-    gap = scrollY + window_height - $footer.offset().top;
-
-    if (gap > 0) {
-      bottom = gap + bottom_origin;
-    } else {
-      bottom = bottom_origin;
-    }
-
-    $btn.css("bottom", bottom);
-  }
+  $(".header-dev").removeClass("active");
 }
 
 function scrolled() {
-  const $header = $("body:not(.fullpage) #header");
+  const $header = $("#header");
   if ($header.length > 0) {
     if ($(window).scrollTop() > 0) {
       $header.addClass("scrolled");
@@ -147,40 +96,32 @@ function topMenu() {
 
 function topMenu_m() {
   const $btnMenu = $(".m-menu");
-  const $btnClose = $(".m-gnav .btn-menu-close");
-  const $mMenu = $(".m-gnav");
-  const $html = $("html");
+  const $mMenu = $(".header-dev");
 
   $btnMenu.on("click", function () {
-    menuOpen();
-  });
-  $btnClose.on("click", function () {
-    menuClose();
+    console.log(11);
+    $(".toggle-menu").toggleClass("on");
+    $mMenu.toggleClass("active");
+    $("html, body").toggleClass("overflow-hidden-active");
   });
 
-  function menuOpen() {
-    $html.css({
-      overflow: "hidden",
-      "touch-action": "none",
-    });
-    $mMenu.addClass("active");
-  }
-
-  function menuClose() {
-    $html.css({
-      overflow: "auto",
-      "touch-action": "auto",
-    });
-    $mMenu.removeClass("active");
-  }
-}
-function moMenuAccordion() {
+  //if ($mMenu.hasClass("active")) {
   $(".has-sub > a").click(function (e) {
     e.preventDefault();
+    var $this = $(this);
+    var $li = $this.closest("li.has-sub");
+    var $subMenu = $li.find(".sub-menu");
 
-    $(this).toggleClass("active");
-    $(this).next(".sub-menu").slideToggle();
+    if ($li.hasClass("active")) {
+      $subMenu.slideUp();
+      $li.removeClass("active");
+    } else {
+      console.log($subMenu);
+      $subMenu.slideDown();
+      $li.addClass("active");
+    }
   });
+  //}
 }
 
 function companyAchievements() {
@@ -196,6 +137,17 @@ function companyAchievements() {
 
     observeParents: true,
     observeSlideChildren: true,
+    breakpoints: {
+      768: {
+        //브라우저가 768보다 클때
+        slidesPerView: 2,
+      },
+
+      1024: {
+        //브라우저가 1024보다 클때
+        slidesPerView: 3,
+      },
+    },
   });
 
   $(".achievement-wrap .btn-swiper-next").on("click", function () {
