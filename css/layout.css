@@ -346,6 +346,27 @@
     height: auto !important;
     max-height: unset !important;
   }
+
+  .header-dev.scrolled {
+    height: 64px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .header-dev.scrolled .inner {
+    height: 64px;
+  }
+  .header-dev.scrolled .logo {
+    height: 64px;
+  }
+  /* .header-dev.scrolled .logo .ico {
+    height: 64px;
+  } */
+
+  .header-dev.scrolled .navbar-dev > li > a {
+    height: 64px;
+  }
+  .header-dev.scrolled .navbar-dev > li .sub-menu {
+    top: 50px;
+  }
 }
 
 /* sub */

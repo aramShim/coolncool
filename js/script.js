@@ -10,4 +10,4 @@ function includeHTML(elementId, file) {
 
 // 헤더와 푸터 삽입
 // includeHTML("header", "header.html");
-includeHTML("footer", "footer.html");
+// includeHTML("footer", "footer.html");

@@ -38,7 +38,11 @@ const lenis = new Lenis({
   duration: 1.2,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
 });
-
+function raf(time) {
+  lenis.raf(time);
+  ScrollTrigger.update();
+  requestAnimationFrame(raf);
+}
 requestAnimationFrame(raf);
 
 function respond() {
@@ -56,7 +60,7 @@ function pcLayout() {
 }
 
 function scrolled() {
-  const $header = $("#header");
+  const $header = $(".header-dev");
   if ($header.length > 0) {
     if ($(window).scrollTop() > 0) {
       $header.addClass("scrolled");
