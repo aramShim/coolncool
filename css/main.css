@@ -117,27 +117,39 @@
 }
 .section02-wrap {
   overflow: hidden;
-  padding-top: 120px;
+  /* padding-top: 120px; */
 }
 .main-visual2-wrap {
   position: absolute;
   /* top: -150px; */
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.main-visual2-wrap > div.relative {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-visual2 {
   overflow: hidden;
   max-width: 1200px;
   border-radius: 50px;
+  width: 100%;
 }
 .video2-wrap {
   position: relative;
-  padding-bottom: 48%;
+  /* padding-bottom: 48%; */
   width: 100%;
-  height: 0;
+  /* height: 0; */
+  height: auto;
+  font-size: 0;
 }
 .video2-wrap video {
   object-fit: cover;
+  width: 100%;
 }
 .circular-text {
   position: absolute;
@@ -171,7 +183,7 @@
   }
 }
 #section02 .section02-wrap .business-main-wrap {
-  padding-top: 24%;
+  padding-top: 35%;
 }
 
 .badge-type-title {
@@ -258,6 +270,9 @@
 }
 .main-experiences-wrap {
   margin-top: 124px;
+}
+.main-experiences-wrap p {
+  text-align: center;
 }
 .main-experiences-wrap .experience-icon {
   margin-bottom: 48px;
@@ -517,6 +532,7 @@
   }
   .visual-copy .main-sub-copy {
     font-size: 18px;
+    width: 80%;
   }
   .visual-copy .main-sub-copy + img {
     max-width: 300px;
@@ -524,8 +540,12 @@
   .main-visual2 {
     max-width: calc(100vw - 40px);
   }
+  .scroll-down {
+    right: 20px;
+  }
 
   /*page2*/
+
   .main-title {
     font-size: 42px;
     line-height: 1.3em;
@@ -541,11 +561,6 @@
     padding-top: 60px;
   }
 
-  .intro-title .go-more {
-    position: relative;
-    margin-top: 28px;
-  }
-
   .main-section .go-more {
     font-size: 15px;
     height: 24px;
@@ -557,6 +572,9 @@
     margin-left: 8px;
   }
 
+  .section-experiences .main-sub-title br {
+    display: none;
+  }
   /*page4*/
   .main-section.sec-brand {
     height: 100vh !important;
@@ -614,6 +632,13 @@
   }
 }
 @media all and (max-width: 768px) {
+  .visual-copy .main-sub-copy br {
+    display: none;
+  }
+  .circular-text {
+    width: 100px;
+    height: 100px;
+  }
   .business-main-title h3 {
     font-size: 32px;
   }
@@ -626,8 +651,13 @@
   .business-list-wrap.grid-cols-3 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .video2-wrap {
-    padding-bottom: 60%;
+
+  .main-title {
+    font-size: 36px;
+  }
+  .main-sub-title {
+    font-size: 18px;
+    line-height: 1.2;
   }
   .main-experiences-wrap {
     margin-top: 80px;
@@ -662,21 +692,51 @@
     margin-top: 16px;
     margin-bottom: 0;
   }
+  .main-experiences-wrap .experience-icon {
+    margin-bottom: 18px;
+    height: 80px;
+  }
 }
 @media all and (max-width: 532px) {
-  .main-service-list a:before {
-    width: 80px;
-    height: 80px;
-    transform: translateY(-9px);
+  .section02-wrap {
+    padding-top: 0;
   }
-
-  .main-service-list a:after {
-    right: 16px;
-    bottom: 16px;
-    width: 20px;
-    height: 20px;
-    background-size: 10px auto;
-    background-image: url(../images/main/i_go_arr_blue_m.svg);
-    background-position: 55% center;
+  .main-visual2-wrap {
+    position: unset;
+    transform: none;
+    left: 0;
   }
+  .main-visual2 {
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .video2-wrap {
+    padding-bottom: 0;
+    height: auto;
+    max-height: 50vh;
+  }
+  .video2-wrap video {
+    width: 100%;
+  }
+  .business-list-wrap li a {
+    border-radius: 18px;
+  }
+  .business-list-wrap.grid-cols-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logo-box .logo-wrap img {
+    height: 22px;
+  }
+  .circular-text {
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    right: 10px;
+  }
+  #section02 .section02-wrap .business-main-wrap {
+    padding-top: 26px;
+  }
+}
+@media all and (max-width: 420px) {
 }

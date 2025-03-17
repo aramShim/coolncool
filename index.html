@@ -269,49 +269,51 @@
         <section id="section02" class="section main-section relative section02">
           <div class="section02-wrap">
             <div class="relative main-visual2-wrap">
-              <div class="circular-text">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="0.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-arrow-down-right"
-                >
-                  <path d="m7 7 10 10" />
-                  <path d="M17 7v10H7" />
-                </svg>
-                <svg viewBox="0 0 100 100" class="text-rotate">
-                  <path
-                    d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
-                    id="circle"
+              <div class="relative">
+                <div class="circular-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
                     fill="none"
-                  ></path>
-                  <text>
-                    <textPath href="#circle" class="en-600" fill="#fff">
-                      COMPANY INTRODUCTION
-                    </textPath>
-                  </text>
-                </svg>
-              </div>
-              <div class="main-visual2">
-                <div class="video2-wrap">
-                  <video
-                    autoplay=""
-                    data-keepplaying=""
-                    loop=""
-                    muted=""
-                    playsinline=""
+                    stroke="currentColor"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-down-right"
                   >
-                    <source
-                      src="https://rlhezzw2e.toastcdn.net/video/main1.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
+                    <path d="m7 7 10 10" />
+                    <path d="M17 7v10H7" />
+                  </svg>
+                  <svg viewBox="0 0 100 100" class="text-rotate">
+                    <path
+                      d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
+                      id="circle"
+                      fill="none"
+                    ></path>
+                    <text>
+                      <textPath href="#circle" class="en-600" fill="#fff">
+                        COMPANY INTRODUCTION
+                      </textPath>
+                    </text>
+                  </svg>
+                </div>
+                <div class="main-visual2">
+                  <div class="video2-wrap">
+                    <video
+                      autoplay=""
+                      data-keepplaying=""
+                      loop=""
+                      muted=""
+                      playsinline=""
+                    >
+                      <source
+                        src="https://rlhezzw2e.toastcdn.net/video/main1.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
                 </div>
               </div>
             </div>
@@ -609,15 +611,60 @@
 
       <script>
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".main-visual2-wrap", {
-          top: "-150px",
-          duration: 1,
-          scrollTrigger: {
-            trigger: "section:nth-of-type(1)",
-            start: "bottom bottom",
-            end: "bottom+=50 bottom+=20",
-            scrub: 3,
-          },
+        let mm = gsap.matchMedia();
+
+        mm.add("(min-width: 1024px)", () => {
+          // 데스크톱 (1024px 이상)
+          gsap.to(".main-visual2-wrap", {
+            top: "-150px",
+            duration: 1,
+            scrollTrigger: {
+              trigger: "section:nth-of-type(1)",
+              start: "bottom bottom",
+              end: "bottom+=50 bottom+=20",
+              scrub: 3,
+            },
+          });
+        });
+
+        mm.add("(max-width: 1240px)", () => {
+          // 태블릿 & 모바일 (1023px 이하)
+          gsap.to(".main-visual2-wrap", {
+            top: "-20%", // 모바일에서는 더 적게 움직이게
+            duration: 1,
+            scrollTrigger: {
+              trigger: "section:nth-of-type(1)",
+              start: "bottom bottom",
+              end: "bottom+=50 bottom+=20",
+              scrub: 3,
+            },
+          });
+        });
+        mm.add("(max-width: 768)", () => {
+          // 태블릿 & 모바일 (768px 이하)
+          gsap.to(".main-visual2-wrap", {
+            top: "-26%", // 모바일에서는 더 적게 움직이게
+            duration: 1,
+            scrollTrigger: {
+              trigger: "section:nth-of-type(1)",
+              start: "bottom bottom",
+              end: "bottom+=50 bottom+=20",
+              scrub: 3,
+            },
+          });
+        });
+        mm.add("(max-width: 532px)", () => {
+          // 태블릿 & 모바일 (532px 이하)
+          gsap.to(".main-visual2-wrap", {
+            top: "0px", // 모바일에서는 더 적게 움직이게
+            duration: 1,
+            scrollTrigger: {
+              trigger: "section:nth-of-type(1)",
+              start: "bottom bottom",
+              end: "bottom+=50 bottom+=20",
+              scrub: 3,
+            },
+          });
         });
         gsap.to(".scroll-down", {
           opacity: 0,

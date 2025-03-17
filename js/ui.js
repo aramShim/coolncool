@@ -2,8 +2,10 @@ $(document).ready(function () {
   respond();
   $(window).on("resize", function () {
     respond();
-    achievementSwiper.destroy();
-    companyAchievements();
+    if ($(".achieve-swiper").length > 0) {
+      achievementSwiper.destroy();
+      companyAchievements();
+    }
   });
   $(window).on("scroll", function () {
     scrolled();
