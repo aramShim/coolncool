@@ -114,6 +114,7 @@ function topMenu_m() {
   //if ($mMenu.hasClass("active")) {
   $(".has-sub > a").click(function (e) {
     e.preventDefault();
+    e.stopPropagation();
     var $this = $(this);
     var $li = $this.closest("li.has-sub");
     var $subMenu = $li.find(".sub-menu");
