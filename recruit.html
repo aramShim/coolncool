@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes"
+      name="viewport"
+    />
+
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta content="telephone=no" name="format-detection" />
+    <!--네이버 서치어드바이저-->
+    <meta content="" name="naver-site-verification" />
+
+    <meta property="og:url" content="http://www.coolncool.com/" />
+    <meta property="og:title" content="COOLNCool" />
+    <meta
+      property="og:description"
+      content="판매대행, 커머스디자인, 라이브커머스, 솔루션개발 등 다양한 서비스를 제공하는 이커머스 전문 기업"
+    />
+    <meta property="og:image" content="img/opengraph/coolncool_OGP.png" />
+
+    <meta
+      name="description"
+      content="판매대행, 커머스디자인, 라이브커머스, 솔루션개발 등 다양한 서비스를 제공하는 이커머스 전문 기업"
+    />
+
+    <title>쿨앤쿨 : 이커머스 전문 기업</title>
+    <!-- CSS -->
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cncicon.css" type="text/css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/layout.css" type="text/css" />
+
+    <!-- JS -->
+    <!--header/footer include-->
+    <script src="js/script.js"></script>
+    <!--// header/footer include-->
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script src="js/ui.js"></script>
+    <!-- content script -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="css/aos.css" type="text/css" />
+    <script src="js/aos.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div class="skip-nav">
+        <ul>
+          <li><a href="#container">본문 바로가기</a></li>
+          <li><a href="#gnav">주메뉴 바로가기</a></li>
+          <li><a href="#footer">푸터 바로가기</a></li>
+        </ul>
+      </div>
+
+      <header class="header-dev col-white">
+        <div class="inner">
+          <div class="h_wrap">
+            <div class="h-top">
+              <h1 class="logo">
+                <a href="/index.html">
+                  <i class="ico">
+                    <span class="blind">쿨앤쿨</span>
+                  </i>
+                </a>
+              </h1>
+              <div class="m-menu">
+                <div id="js-toggle" class="toggle-menu">
+                  <div class="menu-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="navDev" class="nav-dev" data-lenis-prevent>
+              <ul class="navbar-dev">
+                <li class="has-sub">
+                  <a href="" class="en-600">business</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="business-ad.html" class="en-600">Sales:AD</a>
+                    </li>
+                    <li>
+                      <a href="business-bpo.html" class="en-600">Sales:BPO</a>
+                    </li>
+                    <li>
+                      <a href="business-contents.html" class="en-600">
+                        Contents
+                      </a>
+                    </li>
+                    <li>
+                      <a href="business-logistics.html" class="en-600">
+                        Logistics
+                      </a>
+                    </li>
+                    <li>
+                      <a href="business-solution.html" class="en-600">
+                        Solution
+                      </a>
+                    </li>
+                    <li>
+                      <a href="business-data-analsysis.html" class="en-600">
+                        Data Analysis
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="brand.html" class="en-600">brands</a></li>
+                <li class="has-sub">
+                  <a href="" class="en-600">company</a>
+                  <ul class="sub-menu">
+                    <li><a href="company1.html" class="en-600">company1</a></li>
+                    <li><a href="company2.html" class="en-600">company2</a></li>
+                  </ul>
+                </li>
+                <li><a href="recruit.html" class="en-600">recruit</a></li>
+                <li class="hidden">
+                  <a href="new.html" class="en-600">news</a>
+                </li>
+                <li><a href="contact.html" class="en-600">contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <link rel="stylesheet" href="/css/sub.css" />
+
+      <main id="container">
+        <div class="sub-top-wrap recruit">
+          <div class="sub-top">
+            <div class="badge-type-title sub-inner">
+              <h2
+                class="badge en-600"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                Recruit
+              </h2>
+            </div>
+          </div>
+        </div>
+        <section class="sub-section">
+          <div
+            class="sub-title-wrap sub-inner"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h3 class="en-600">Heading toward a single goal</h3>
+            <p class="ko-info">하나의 목표를 향해 나아갑니다.</p>
+            <p class="en-inco en-300">
+              Even though we each do different tasks, we are heading toward a
+              single goal.
+            </p>
+            <a href="/index.html" class="go-home">
+              <i class="icon-structure05"></i>
+            </a>
+          </div>
+          <!---->
+          <div class="recruit-wrap" data-aos="fade-up" data-aos-delay="500">
+            <div class="core-wrap sub-inner">
+              <div class="vision-title en-500">CORE VALUE</div>
+              <div class="flex justify-center">
+                <!--3개-->
+                <div class="value-wrap">
+                  <div class="squre-wrap">
+                    <p class="en-700">
+                      <strong>WHY</strong>
+                      do we work?
+                    </p>
+                    <span class="text-blue">주도성</span>
+                  </div>
+                  <div class="value-text">
+                    <p>
+                      "해보는 것이 완벽한 것보다 낫다"
+                      <span class="en-400">Done is better than Perfect</span>
+                    </p>
+                  </div>
+                  <ul class="value-info">
+                    <li>왜 하는지 알고 하는 것이 중요합니다(주체성).</li>
+                    <li>
+                      그러면 절대 시키는 일만 하는 사람에 머물지
+                      않습니다(주도성).
+                    </li>
+                    <li>
+                      아이디어를 내고 도전하고 시도하며 시행착오와 실패를
+                      반복하는 것은 성공으로 가는 지극히 정사적이고 확실한
+                      과정입니다.
+                    </li>
+                  </ul>
+                  <div class="value-hash">
+                    <strong>#주도성 #주체성 #도전 #열정 #책임감</strong>
+                  </div>
+                </div>
+                <!---->
+                <div class="value-wrap">
+                  <div class="squre-wrap">
+                    <p class="en-700">
+                      <strong>HOW</strong>
+                      do we work?
+                    </p>
+                    <span class="text-blue">성장성</span>
+                  </div>
+                  <div class="value-text">
+                    <p>
+                      <span>
+                        "어제보다 나은 오늘,
+                        <br />
+                        오늘보다 나을 내일의 우리"
+                      </span>
+                    </p>
+                  </div>
+                  <ul class="value-info">
+                    <li>
+                      끊임없이 배우고 익히는 건 앞서가고 성장하는 자의
+                      숙명입니다.
+                    </li>
+                    <li>안주와 무지는 곧 퇴보를 의미합니다.</li>
+                    <li>
+                      우리는 더 성장하기 위해 우리의 소중한 시간과 노력을
+                      어제보다 영리하고 더 효율적으로 사용해야 합니다.
+                    </li>
+                  </ul>
+                  <div class="value-hash">
+                    <strong>#성장 #학습 #효율성 #생산성 #자동화</strong>
+                  </div>
+                </div>
+                <!---->
+                <div class="value-wrap">
+                  <div class="squre-wrap">
+                    <p class="en-700">
+                      <strong>WHO</strong>
+                      do we work with?
+                    </p>
+                    <span class="text-blue">협력성</span>
+                  </div>
+                  <div class="value-text">
+                    <p>
+                      <span>
+                        "혼자 할 수 없는 일을 함께
+                        <br />
+                        해내는 곳이 회사"
+                      </span>
+                    </p>
+                  </div>
+                  <ul class="value-info">
+                    <li>
+                      우리는 각각 하는 일은 달라도 하나의 목표를 향합니다.
+                    </li>
+                    <li>
+                      다른 일을 하는 동료에 대한 존중과 배려는 기본 매너 입니다.
+                    </li>
+                    <li>격려와 칭찬이 넘치는 문화를 만들어 갑니다.</li>
+                  </ul>
+                  <div class="value-hash">
+                    <strong>#협동 #존중 #배려 #격려 #칭찬 #나눔</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <div class="work-wrap">
+              <div class="sub-inner">
+                <h3 class="sub-sub-title">
+                  We create an enjoyable
+                  <br />
+                  work environment.
+                </h3>
+                <ul class="environment-wrap">
+                  <li class="flex">
+                    <div class="work-no">
+                      <span class="no-text en-500">01</span>
+                    </div>
+                    <div class="work-title">
+                      <strong>기본사항</strong>
+                      <span class="en-300">Basics</span>
+                    </div>
+                    <div class="work-info">
+                      <dl>
+                        <dt>4대보험</dt>
+                        <dd>국민연금, 건강보험, 고용보험, 산재보험은 당연!</dd>
+                      </dl>
+                      <dl>
+                        <dt>퇴직연금제도</dt>
+                        <dd>
+                          퇴직금(1년 이상 근무 직원)을 안전한 외부 금융기관에
+                          적립하고 직접 운용할 수도 있어요!
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>건강검진</dt>
+                        <dd>
+                          정기적인 건강검진은 필수! 물류직원은 1년, 사무직원은
+                          2년마다 꼭 받아요!
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="flex">
+                    <div class="work-no">
+                      <span class="no-text en-500">02</span>
+                    </div>
+                    <div class="work-title">
+                      <strong>업무몰입</strong>
+                      <span class="en-300">Work Immersion</span>
+                    </div>
+                    <div class="work-info">
+                      <dl>
+                        <dt>선택근로제</dt>
+                        <dd>
+                          근무시간을 자유롭게 설계할 수 있는 선택 근로제 운영.
+                          <br />
+                          코어타임인 10시에서 15시를 제외한 시간은 자유롭게
+                          근무시간 선택.
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>업무용 메신저</dt>
+                        <dd>
+                          업무용으로는 카톡을 사용하지 않고 업무용 전용 메신저와
+                          그룹웨어만 사용!
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>모션 데스크</dt>
+                        <dd>
+                          수시로 앉거나 일어서서 일할 수 있는 전동 높낮이 조절
+                          책상 제공!
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>수면실, 리프레쉬 룸</dt>
+                        <dd>
+                          입사 후 1년까지 월차휴가 11일(매월 1일씩 발생) + 입사
+                          1년 후부터는 유급 연차 휴가 15일(2년마다 1일씩 가산)
+                          <br />
+                          휴가는 PC나 휴대폰으로 사유를 기재하지 않고 간편하게
+                          신청, 승인!
+                          <br />
+                          경조사별 휴가 부여, 보건휴가(무급) 사용
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="flex">
+                    <div class="work-no">
+                      <span class="no-text en-500">03</span>
+                    </div>
+                    <div class="work-title">
+                      <strong>워라벨</strong>
+                      <span class="en-300">Work-Life Balance</span>
+                    </div>
+                    <div class="work-info">
+                      <dl>
+                        <dt>휴가제도</dt>
+                        <dd>
+                          입사 후 1년까지 월차휴가 11일(매월 1일씩 발생) + 입사
+                          1년 후부터는 유급 연차 휴가 15일(2년마다 1일씩 가산)
+                          <br />
+                          휴가는 PC나 휴대폰으로 사유를 기재하지 않고 간편하게
+                          신청, 승인!
+                          <br />
+                          경조사별 휴가 부여, 보건휴가(무급) 사용
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>해피런치</dt>
+                        <dd>
+                          두 달에 한번씩 해피런치 타임! 점심시간이 2시간이에요!
+                          남은 시간은 개인별로, 부서 회식으로 자유롭게 활용!
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>문화의 날</dt>
+                        <dd>
+                          업무를 일찍 마무리하고 단체로 영화 및 연극, 뮤지컬
+                          관람 등 문화활동 또는 체험활동!
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="flex">
+                    <div class="work-no">
+                      <span class="no-text en-500">04</span>
+                    </div>
+                    <div class="work-title">
+                      <strong>켄틴운영</strong>
+                      <span class="en-300">Canteen</span>
+                    </div>
+                    <div class="work-info">
+                      <dl>
+                        <dt>케이터링 서비스</dt>
+                        <dd>
+                          단돈 천원으로 매일 따끈한 국과 다양한 반찬으로 맛있는
+                          점심을 드려요~!
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>스낵바 (간식, 컵라면, 음료, 커피)</dt>
+                        <dd>
+                          당(糖) 떨어질 걱정 없다! 다양한 스낵, 컵라면, 음료수
+                          마구 제공! 고급원두 커피머신 구비!
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="flex">
+                    <div class="work-no">
+                      <span class="no-text en-500">05</span>
+                    </div>
+                    <div class="work-title">
+                      <strong>지원금</strong>
+                      <span class="en-300">Support Allowance</span>
+                    </div>
+                    <div class="work-info">
+                      <dl>
+                        <dt>경조금 지급</dt>
+                        <dd>
+                          경조사별 경조금 지급
+                          <br />
+                          본인 결혼 및 경사, 직계 존비속 조사 등에 화환을
+                          보내드려요.
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>생일축하금</dt>
+                        <dd>
+                          매월 생일자 대상 생일케이크 축하 파티도 하고
+                          생일축하금도 드려요!
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>야근시 저녁 식비 지원</dt>
+                        <dd>
+                          본인 퇴근 시간 기준 1시간이상 초과 근무시 저녁 식비를
+                          지원합니다.
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!---->
+        </section>
+      </main>
+
+      <div id="footer">
+        <footer>
+          <div class="footer-inner">
+            <div class="f-container">
+              <ul class="f-info">
+                <li>T.1688-0186</li>
+                <li>
+                  A.서울특별시 서초구 강남대로51길 1 (서초동) 511 TOWER 4층
+                </li>
+                <li>E. help@coolncool.com</li>
+                <li>F. 02-3474-7679</li>
+              </ul>
+              <ul class="f-contact">
+                <li class="name">(주)쿨앤쿨</li>
+                <li>대표이사 : 곽상준</li>
+                <li>사업자 번호 : 116-81-6768</li>
+                <li>소프트웨어사업자 : 제 818-146851호</li>
+                <li>통신판매업 : 제 2012-서울서초-1278호</li>
+              </ul>
+              <ul class="f-contact">
+                <li>건강기능식품판매업 : 서초구청 수지 505호</li>
+                <li>의료기기판매업 : 서초구 보건소 3505호</li>
+                <li>서비스표 등록 : 특허청 제 41-0095786호</li>
+              </ul>
+
+              <div class="f-outer-link">
+                <div class="f-family-site">
+                  <button type="button" class="en-600">
+                    FAMILY SITE
+                    <i class="icon-sign01"></i>
+                  </button>
+                  <div class="family-site-list">
+                    <ul>
+                      <li>
+                        <a href="https://www.powershop.co.kr/" target="_blank">
+                          파워샵
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.visualist.co.kr/" target="_blank">
+                          비주얼리스트
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://www.d-mind.kr/" target="_blank">
+                          디마인드
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/dmind"
+                          target="_blank"
+                        >
+                          디마인드 공식스토어
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/pwshop"
+                          target="_blank"
+                        >
+                          애경 공식스토어
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/pigeon"
+                          target="_blank"
+                        >
+                          피죤 공식스토어
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/coolsale/"
+                          target="_blank"
+                        >
+                          남양 공식스토어
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/vivienonline"
+                          target="_blank"
+                        >
+                          비비안 공식스토어
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/coolncoolyh"
+                          target="_blank"
+                        >
+                          유한양행 공식스토어
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/ecolabmall"
+                          target="_blank"
+                        >
+                          이콜랩 공식스토어
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/dbheart"
+                          target="_blank"
+                        >
+                          더븚하트 공식스토어
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <p class="f-copyright en-500">
+                COPYRIGHT ⓒ 1998-2025 COOL&COOL. ALL RIGHTS RESERVED.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

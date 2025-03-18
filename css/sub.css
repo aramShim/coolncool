@@ -30,6 +30,9 @@
 .text-blue {
   color: #0049b4;
 }
+.text-green {
+  color: #00ae53;
+}
 .sub-section {
   padding: 60px 0 120px;
 }
@@ -447,6 +450,214 @@
 }
 
 /********************************************
+  컴퍼니1
+*********************************************/
+.identity-wrap {
+  padding: 72px 0;
+}
+.identity-section {
+  margin-bottom: 62px;
+}
+h3.sub-sub-title {
+  font-size: 36px;
+  padding-bottom: 16px;
+}
+.corporate-logo {
+  background: #f6f6f6;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 52px 36px;
+}
+.corporate-logo img {
+  max-width: 100%;
+}
+.vision-wrap {
+  background-color: #f6f6f6;
+}
+.identity-section .grid-cols-2 {
+  gap: 16px;
+  grid-template-rows: repeat(2, 1fr);
+}
+.subsidiary {
+  border: 1px solid #252525;
+  padding: 56px;
+  display: flex;
+  flex-flow: column;
+}
+.subsidiary-img img {
+  max-width: 100%;
+}
+.subsidiary-text {
+  margin-top: auto;
+}
+.subsidiary-nm {
+  padding: 48px 0 16px;
+}
+.subsidiary-nm strong {
+  font-size: 18px;
+  font-weight: "NanumSquareNeoHeavy";
+}
+.subsidiary-nm a {
+  font-size: 0.8em;
+  padding-left: 16px;
+}
+.subsidiary-info li {
+  display: flex;
+  padding: 2px 0;
+}
+.subsidiary-info li strong {
+  display: inline-block;
+  padding-right: 16px;
+}
+.cnc-group-wrap {
+  padding-top: 28px;
+  border-bottom: 2px solid #1a1a1a;
+}
+.cnc-group-wrap > li {
+  padding: 24px 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+.cnc-group-wrap > li > div {
+  width: 40%;
+}
+.cnc-group-wrap > li > div h4 {
+  font-size: 18px;
+}
+.cnc-group-wrap > li > div span {
+  font-size: 0.8em;
+}
+.cnc-group-company-info li:last-child {
+  padding-top: 4px;
+}
+.cnc-group-company-info li strong {
+  display: inline-block;
+  padding-right: 16px;
+}
+.vision-wrap {
+  padding: 72px 0;
+}
+.vison-box-wrap {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  padding: 32px 0;
+}
+.vision-title {
+  width: 200px;
+  height: 200px;
+  background-color: #0049b4;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.vision-title:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 16px;
+  background-color: #0049b4;
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.squre-wrap {
+  position: relative;
+  display: inline-block;
+  padding: 16px 72px;
+  margin-top: 56px;
+}
+.squre-wrap:before,
+.squre-wrap:after {
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 92px;
+  color: #0049b4;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  top: 50%;
+}
+.squre-wrap:before {
+  content: "[";
+  left: 0;
+}
+.squre-wrap:after {
+  content: "]";
+  right: 0;
+}
+
+.slogan .squre-wrap:before,
+.slogan .squre-wrap:after {
+  color: #00ae53;
+}
+.slogan.vison-box-wrap .vision-title,
+.slogan.vison-box-wrap .vision-title:after {
+  background-color: #00ae53;
+}
+.vision-box p {
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.vision-box p.en-700 {
+  font-size: 28px;
+}
+.vision-box span:not(.en-400) {
+  font-weight: 900;
+}
+.slogan-list {
+  position: relative;
+  gap: 16px;
+  padding: 32px;
+}
+.slogan-list:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent url(/images/company-cnc-bg.png) no-repeat center
+    center / auto 50%;
+}
+.slogan-list > div {
+  background-color: #00ae53;
+  color: #fff;
+  border-radius: 60px;
+  padding: 48px 64px;
+  text-align: center;
+}
+.slogan-list > div:nth-child(2n) {
+  background-color: #0049b4;
+}
+.slogan-list > div:nth-child(1) {
+  border-bottom-right-radius: 0;
+}
+.slogan-list > div:nth-child(2) {
+  border-bottom-left-radius: 0;
+}
+.slogan-list > div:nth-child(3) {
+  border-top-right-radius: 0;
+}
+.slogan-list > div:nth-child(4) {
+  border-top-left-radius: 0;
+}
+.slogan-list > div > strong {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+/********************************************
   컨택트
 *********************************************/
 .sub-top-wrap.contact {
@@ -518,6 +729,133 @@
   display: inline-block;
   padding-right: 16px;
 }
+/********************************************
+  recruit
+*********************************************/
+.recruit + .sub-section {
+  padding-bottom: 0;
+}
+.sub-top-wrap.recruit {
+  background: transparent url(../images/sub-banner-recruite.png) no-repeat 50% 0 /
+    cover;
+}
+.core-wrap {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  padding: 72px 0;
+}
+.value-wrap {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.value-wrap .squre-wrap p {
+  font-size: 22px;
+  line-height: 1;
+}
+.value-wrap .squre-wrap strong {
+  display: block;
+  font-size: 1.1em;
+}
+.value-wrap .squre-wrap span.text-blue {
+  font-weight: 900;
+  display: inline-block;
+  padding-top: 12px;
+  font-size: 22px;
+}
+.value-wrap .squre-wrap:before,
+.value-wrap .squre-wrap:after {
+  font-size: 110px;
+}
+.value-text {
+  margin: 16px 0;
+  padding: 18px 12%;
+  background-color: #00a950;
+  color: #fff;
+  border-radius: 50px;
+  width: 112%;
+  margin-left: -6%;
+  box-sizing: border-box;
+}
+.value-text p {
+  font-size: 18px;
+}
+.value-text p span {
+  display: block;
+}
+.value-wrap:nth-child(2) .value-text {
+  background-color: #0049b4;
+  mix-blend-mode: multiply;
+}
+.value-info {
+  padding: 32px 0 56px;
+}
+.value-info li {
+  font-weight: 600;
+  text-align: center;
+  width: 65%;
+  padding: 3px 0;
+  margin: 0 auto;
+  font-size: 15px;
+}
+.value-hash {
+  margin-top: auto;
+}
+
+.work-wrap {
+  background-color: #f6f6f6;
+  padding: 72px 0;
+  margin-top: 72px;
+}
+.environment-wrap > li {
+  padding: 16px 0;
+}
+.environment-wrap .work-no {
+  width: 100px;
+  height: 100px;
+  border: 1px dashed #0049b4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.environment-wrap .work-no .no-text {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0049b4;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: underline;
+}
+.work-title {
+  padding: 24px 32px;
+  display: flex;
+  flex-flow: column;
+  font-size: 22px;
+  min-width: 280px;
+}
+.work-title span {
+  font-size: 0.8em;
+}
+.work-info {
+  padding: 16px 0;
+}
+.work-info dl {
+  padding: 16px 0;
+}
+.work-info dt {
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+
 @media all and (max-width: 1360px) {
   .sub-inner {
     margin: 0 80px;
