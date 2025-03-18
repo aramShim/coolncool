@@ -555,6 +555,7 @@ h3.sub-sub-title {
   align-items: center;
   justify-content: center;
   font-size: 28px;
+  line-height: 1.1;
 }
 .vision-title:after {
   content: "";
@@ -570,7 +571,9 @@ h3.sub-sub-title {
 .squre-wrap {
   position: relative;
   display: inline-block;
-  padding: 16px 72px;
+  padding: 16px 16px;
+  width: 90%;
+  box-sizing: border-box;
   margin-top: 56px;
 }
 .squre-wrap:before,
@@ -809,8 +812,20 @@ h3.sub-sub-title {
   padding: 72px 0;
   margin-top: 72px;
 }
+.environment-wrap {
+  padding-top: 28px;
+}
 .environment-wrap > li {
   padding: 16px 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.work-no-wrap {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  gap: 0 32px;
+  flex-wrap: wrap;
 }
 .environment-wrap .work-no {
   width: 100px;
@@ -834,17 +849,19 @@ h3.sub-sub-title {
   text-decoration: underline;
 }
 .work-title {
-  padding: 24px 32px;
   display: flex;
   flex-flow: column;
   font-size: 22px;
-  min-width: 280px;
+  box-sizing: border-box;
+  width: calc(100% - 140px);
 }
 .work-title span {
   font-size: 0.8em;
 }
 .work-info {
-  padding: 16px 0;
+  padding: 12px 16px;
+  width: 70%;
+  box-sizing: border-box;
 }
 .work-info dl {
   padding: 16px 0;
@@ -864,6 +881,11 @@ h3.sub-sub-title {
   }
   .company-video a {
     margin: 0 20px;
+  }
+}
+@media all and (max-width: 1240px) {
+  .value-wrap {
+    width: 33.333%;
   }
 }
 @media all and (max-width: 1024px) {
@@ -954,6 +976,32 @@ h3.sub-sub-title {
   }
   .slogan-list {
     padding: 32px 0;
+  }
+  /*recruit*/
+  .core-wrap > .flex {
+    flex-flow: column;
+    align-items: center;
+  }
+  .value-wrap {
+    width: 100%;
+  }
+  .value-text {
+    width: 90%;
+    margin-left: 0;
+  }
+  .squre-wrap {
+    width: 70%;
+  }
+  /*recruit*/
+  .environment-wrap .work-no {
+    width: 80px;
+    height: 80px;
+  }
+  .work-no-wrap {
+    gap: 0 12px;
+  }
+  .work-title {
+    width: calc(100% - 94px);
   }
 }
 @media all and (max-width: 768px) {
@@ -1061,6 +1109,21 @@ h3.sub-sub-title {
   .slogan-list > div > strong {
     font-size: 18px;
     padding-bottom: 8px;
+  }
+  /*recruit*/
+  .environment-wrap > li {
+    flex-flow: column;
+  }
+  .work-no-wrap {
+    width: 100%;
+  }
+  .work-info {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+
+    border-radius: 30px;
+    margin-top: 16px;
+    padding: 24px 32px;
   }
 }
 @media all and (max-width: 560px) {
