@@ -497,7 +497,6 @@ h3.sub-sub-title {
 }
 .subsidiary-nm strong {
   font-size: 18px;
-  font-weight: "NanumSquareNeoHeavy";
 }
 .subsidiary-nm a {
   font-size: 0.8em;
@@ -633,7 +632,7 @@ h3.sub-sub-title {
   background-color: #00ae53;
   color: #fff;
   border-radius: 60px;
-  padding: 48px 64px;
+  padding: 48px 16px;
   text-align: center;
 }
 .slogan-list > div:nth-child(2n) {
@@ -942,6 +941,20 @@ h3.sub-sub-title {
   .achive-title h3 {
     font-size: 38px;
   }
+  /*company1*/
+  .subsidiary {
+    padding: 32px;
+  }
+  .subsidiary-img {
+    width: 60%;
+  }
+  .subsidiary-nm a {
+    display: block;
+    padding: 0;
+  }
+  .slogan-list {
+    padding: 32px 0;
+  }
 }
 @media all and (max-width: 768px) {
   .sub-title-wrap .go-home {
@@ -993,6 +1006,61 @@ h3.sub-sub-title {
   .company-sub-text .ko-sub {
     width: 90%;
     margin: 0 auto;
+  }
+  /*company1*/
+  h3.sub-sub-title {
+    font-size: 28px;
+  }
+
+  .corporate-logo img {
+    max-width: 40%;
+  }
+  .subsidiary-img {
+    width: 40%;
+  }
+  .identity-section .grid-cols-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cnc-group-wrap > li {
+    flex-flow: column;
+    gap: 16px 0;
+  }
+  .cnc-group-wrap > li > div {
+    width: 100%;
+  }
+  .squre-wrap {
+    margin-top: 38px;
+  }
+  .vision-title {
+    width: 150px;
+    height: 150px;
+    font-size: 22px;
+  }
+  .vision-box p {
+    font-size: 16px;
+  }
+  .vision-box p.en-700 {
+    font-size: 26px;
+  }
+  .vision-box span:not(.en-400) {
+    font-size: 14px;
+  }
+  .vision-box span:not(.en-400) br {
+    display: none;
+  }
+  .slogan-list.grid-cols-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .slogan-list:after {
+    background-size: 50% auto;
+  }
+  .slogan-list > div {
+    padding: 32px 16px;
+    border-radius: 40px;
+  }
+  .slogan-list > div > strong {
+    font-size: 18px;
+    padding-bottom: 8px;
   }
 }
 @media all and (max-width: 560px) {
