@@ -14,7 +14,7 @@
 }
 .sub-top-wrap .badge-type-title {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
 }
 .badge-type-title .badge {
@@ -47,11 +47,12 @@
 .sub-title-wrap .ko-info {
   font-weight: 900;
   font-size: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 .sub-title-wrap .en-inco {
   font-size: 18px;
   line-height: 1.4;
+  padding-bottom: 40px;  
 }
 .sub-title-wrap .go-home {
   position: absolute;
@@ -249,6 +250,7 @@
   justify-content: center;
   opacity: 0.2;
   transition: all 0.3s;
+  z-index: 1;
 }
 .logo-img img {
   max-width: 50%;
@@ -257,6 +259,9 @@
 .sales-list li {
   margin-left: -1px;
   max-width: 50%;
+}
+.sales-list li > a {
+  display: block;
 }
 .sales-list li > a .brand-img {
   overflow: hidden;
@@ -357,9 +362,12 @@
   font-size: 22px;
 }
 .company-text-wrap .text-wrap .en-300 {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.4
+  color: #666;
 }
 .company-text-wrap .text-wrap .ko-info {
+  margin-bottom: 16px;
   padding-top: 16px;
   font-size: 15px;
 }
@@ -746,7 +754,7 @@ h3.sub-sub-title {
   display: flex;
   align-items: center;
   flex-flow: column;
-  padding: 72px 0;
+  padding: 40px 0;
 }
 .value-wrap {
   width: 30%;
@@ -875,7 +883,7 @@ h3.sub-sub-title {
 @media all and (max-width: 1360px) {
   .sub-inner {
     margin: 0 80px;
-  }
+  } 
   .bs-icon-wrap.flex.bpo li {
     width: 33.333%;
   }

@@ -1,461 +1,279 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes"
-      name="viewport"
-    />
+<head>
+  <meta charset="utf-8" />
+  <!-- <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" name="viewport" /> -->
+  <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" /> 
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <meta content="telephone=no" name="format-detection" />
+  
+  <!-- 네이버 서치어드바이저 -->
+  <meta content="" name="naver-site-verification" />
 
-    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <meta content="telephone=no" name="format-detection" />
-    <!--네이버 서치어드바이저-->
-    <meta content="" name="naver-site-verification" />
+  <!-- 오픈그래프 메타 태그 -->
+  <meta property="og:url" content="http://www.coolncool.com/" />
+  <meta property="og:title" content="COOLNCool" />
+  <meta property="og:description" content="커머스 BPO, 세일즈, 몰 운영, 디자인, 영상, 풀필먼트 물류, 24시간 AI 콜센터, 솔루션, 자동화 개발" />
+  <meta property="og:image" content="img/opengraph/coolncool_OGP.png" />
+  <meta name="description" content="커머스 BPO, 세일즈, 몰 운영, 디자인, 영상, 풀필먼트 물류, 24시간 AI 콜센터, 솔루션, 자동화 개발" />
 
-    <meta property="og:url" content="http://www.coolncool.com/" />
-    <meta property="og:title" content="COOLNCool" />
-    <meta
-      property="og:description"
-      content="판매대행, 커머스디자인, 라이브커머스, 솔루션개발 등 다양한 서비스를 제공하는 이커머스 전문 기업"
-    />
-    <meta property="og:image" content="img/opengraph/coolncool_OGP.png" />
+  <title>쿨앤쿨 : 커머스 BPO 전문그룹</title>
+  
+  <!-- CSS -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+  
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="css/cncicon.css" type="text/css" />
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+  <link rel="stylesheet" href="css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="css/aos.css" type="text/css" />
+  
+  <!-- JS -->
+  <script src="js/script.js"></script>
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/aos.js"></script>
+  
+  <!-- 파비콘 -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="images/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
 
-    <meta
-      name="description"
-      content="판매대행, 커머스디자인, 라이브커머스, 솔루션개발 등 다양한 서비스를 제공하는 이커머스 전문 기업"
-    />
-
-    <title>쿨앤쿨 : 이커머스 전문 기업</title>
-    <!-- CSS -->
-    <!--google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/cncicon.css" type="text/css" />
-    <link rel="stylesheet" href="css/common.css" type="text/css" />
-    <link rel="stylesheet" href="css/layout.css" type="text/css" />
-
-    <!-- JS -->
-    <!--header/footer include-->
-    <script src="js/script.js"></script>
-    <!--// header/footer include-->
-
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
-    <script src="js/ui.js"></script>
-    <!-- content script -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="images/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="images/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="images/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="images/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="images/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="images/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="images/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="images/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="images/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="images/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="images/favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-
-    <link rel="stylesheet" href="css/aos.css" type="text/css" />
-    <script src="js/aos.js"></script>
-  </head>
-
-  <body>
-    <div id="wrap">
-      <div class="skip-nav">
-        <ul>
-          <li><a href="#container">본문 바로가기</a></li>
-          <li><a href="#gnav">주메뉴 바로가기</a></li>
-          <li><a href="#footer">푸터 바로가기</a></li>
-        </ul>
-      </div>
-
-      <header class="header-dev col-white">
-        <div class="inner">
-          <div class="h_wrap">
-            <div class="h-top">
-              <h1 class="logo">
-                <a href="/index.html">
-                  <i class="ico">
-                    <span class="blind">쿨앤쿨</span>
-                  </i>
-                </a>
-              </h1>
-              <div class="m-menu">
-                <div id="js-toggle" class="toggle-menu">
-                  <div class="menu-line"></div>
-                </div>
-              </div>
-            </div>
-
-            <div id="navDev" class="nav-dev" data-lenis-prevent>
-              <ul class="navbar-dev">
-                <li class="has-sub">
-                  <a href="#" class="en-600">business</a>
-                  <ul class="sub-menu">
-                    <li>
-                      <a href="business-ad.html" class="en-600">Sales:AD</a>
-                    </li>
-                    <li>
-                      <a href="business-bpo.html" class="en-600">Sales:BPO</a>
-                    </li>
-                    <li>
-                      <a href="business-contents.html" class="en-600">
-                        Contents
-                      </a>
-                    </li>
-                    <li>
-                      <a href="business-logistics.html" class="en-600">
-                        Logistics
-                      </a>
-                    </li>
-                    <li>
-                      <a href="business-solution.html" class="en-600">
-                        Solution
-                      </a>
-                    </li>
-                    <li>
-                      <a href="business-data-analsysis.html" class="en-600">
-                        Data Analysis
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="brand.html" class="en-600">brands</a></li>
-                <li class="has-sub">
-                  <a href="#" class="en-600">company</a>
-                  <ul class="sub-menu">
-                    <li><a href="company1.html" class="en-600">company1</a></li>
-                    <li><a href="company2.html" class="en-600">company2</a></li>
-                  </ul>
-                </li>
-                <li><a href="recruit.html" class="en-600">recruit</a></li>
-                <li class="hidden">
-                  <a href="new.html" class="en-600">news</a>
-                </li>
-                <li><a href="contact.html" class="en-600">contact us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-      <link rel="stylesheet" href="css/sub.css" />
-      <main id="container" class="scroller">
-        <div class="sub-top-wrap contact">
-          <div class="sub-top">
-            <div class="badge-type-title sub-inner">
-              <h2
-                class="badge en-600"
-                data-aos="fade-right"
-                data-aos-delay="100"
-              >
-                Contact Us
-              </h2>
-            </div>
-          </div>
-        </div>
-        <section class="sub-section">
-          <div
-            class="sub-title-wrap sub-inner"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <h3 class="en-600">Bridging brands and the world!</h3>
-            <p class="ko-info">
-              <span class="text-blue">AI의 기술력과 전문가의 경험</span>
-              이 대체 불가능한 서비스를 제공합니다.
-            </p>
-            <p class="en-inco en-300">
-              AI technology and expert experience provide irreplaceable
-              services.
-            </p>
-            <a href="/index.html" class="go-home">
-              <i class="icon-structure05"></i>
-            </a>
-          </div>
-
-          <div class="contact-wrap">
-            <div class="map-wrap" data-aos="fade-up" data-aos-delay="400"></div>
-            <div class="contact">
-              <div class="sub-inner flex">
-                <div
-                  class="contact-cnc relative"
-                  data-aos="fade-right"
-                  data-aos-delay="300"
-                >
-                  <div>
-                    <strong class="en-700">
-                      grow
-                      <br />
-                      bigger!
-                    </strong>
-                    <img
-                      src="images/with.png"
-                      alt="width"
-                      class="width-img absolute"
-                    />
-                  </div>
-                  <img src="images/logo.svg" alt="쿨앤쿨" class="cnc-logo" />
-                </div>
-                <div
-                  class="contact-info"
-                  data-aos="fade-left"
-                  data-aos-delay="400"
-                >
-                  <div class="cnc-office">
-                    <p class="text-blue neo-900">[ 본사 ]</p>
-                    <p class="office-address neo-800">
-                      서울특별시 서초구 강남대로51길 1, 511 TOWER 4층 (서초동)
-                    </p>
-                    <p class="en-400">
-                      Gangnam-daero 51-gil, Seocho-gu, Seoul, Republic of Korea
-                    </p>
-                  </div>
-                  <ul class="tel-info">
-                    <li>
-                      <b class="en-700">
-                        <span class="text-blue">T</span>
-                        1688-0186
-                      </b>
-                    </li>
-                    <li>
-                      <b class="en-700">
-                        <span class="text-blue">F</span>
-                        02-3474-7679
-                      </b>
-                    </li>
-                    <li>
-                      <b class="en-700">
-                        <span class="text-blue">E</span>
-                        help@coolncool.com
-                      </b>
-                    </li>
-                  </ul>
-                  <div class="cnc-office">
-                    <p class="text-blue neo-900">[ 제 1 물류센터 ]</p>
-                    <p class="office-address neo-800">
-                      경기 이천시 부발읍 황무로 1833번지 175-84
-                      쿨앤쿨파워샵이천물류센터
-                    </p>
-                    <p class="en-400">
-                      175-84, Hwangmu-ro, Bubal-eup, Icheon-si,
-                      <br />
-                      Gyeonggi-do, Republic of Korea
-                    </p>
-                  </div>
-                  <div class="cnc-office">
-                    <p class="text-blue neo-900">[ 제 2 물류센터 ]</p>
-                    <p class="office-address neo-800">
-                      경기 이천시 부발읍 황무로 1833번지 175-102
-                      쿨앤쿨냉장유통센터
-                    </p>
-                    <p class="en-400">
-                      175-102, Hwangmu-ro, Bubal-eup, Icheon-si,
-                      <br />
-                      Gyeonggi-do, Republic of Korea
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <div id="footer">
-        <footer>
-          <div class="footer-inner">
-            <div class="f-container">
-              <ul class="f-info">
-                <li>T.1688-0186</li>
-                <li>
-                  A.서울특별시 서초구 강남대로51길 1 (서초동) 511 TOWER 4층
-                </li>
-                <li>E. help@coolncool.com</li>
-                <li>F. 02-3474-7679</li>
-              </ul>
-              <ul class="f-contact">
-                <li class="name">(주)쿨앤쿨</li>
-                <li>대표이사 : 곽상준</li>
-                <li>사업자 번호 : 116-81-6768</li>
-                <li>소프트웨어사업자 : 제 818-146851호</li>
-                <li>통신판매업 : 제 2012-서울서초-1278호</li>
-              </ul>
-              <ul class="f-contact">
-                <li>건강기능식품판매업 : 서초구청 수지 505호</li>
-                <li>의료기기판매업 : 서초구 보건소 3505호</li>
-                <li>서비스표 등록 : 특허청 제 41-0095786호</li>
-              </ul>
-
-              <div class="f-outer-link">
-                <div class="f-family-site">
-                  <button type="button" class="en-600">
-                    FAMILY SITE
-                    <i class="icon-sign01"></i>
-                  </button>
-                  <div class="family-site-list">
-                    <ul>
-                      <li>
-                        <a href="https://www.powershop.co.kr/" target="_blank">
-                          파워샵
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.visualist.co.kr/" target="_blank">
-                          비주얼리스트
-                        </a>
-                      </li>
-                      <li>
-                        <a href="http://www.d-mind.kr/" target="_blank">
-                          디마인드
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://smartstore.naver.com/dmind"
-                          target="_blank"
-                        >
-                          디마인드 공식스토어
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://smartstore.naver.com/pwshop"
-                          target="_blank"
-                        >
-                          애경 공식스토어
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://smartstore.naver.com/pigeon"
-                          target="_blank"
-                        >
-                          피죤 공식스토어
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://smartstore.naver.com/coolsale/"
-                          target="_blank"
-                        >
-                          남양 공식스토어
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://smartstore.naver.com/vivienonline"
-                          target="_blank"
-                        >
-                          비비안 공식스토어
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://smartstore.naver.com/coolncoolyh"
-                          target="_blank"
-                        >
-                          유한양행 공식스토어
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://smartstore.naver.com/ecolabmall"
-                          target="_blank"
-                        >
-                          이콜랩 공식스토어
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://smartstore.naver.com/dbheart"
-                          target="_blank"
-                        >
-                          더븚하트 공식스토어
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <p class="f-copyright en-500">
-                COPYRIGHT ⓒ 1998-2025 COOL&COOL. ALL RIGHTS RESERVED.
-              </p>
-            </div>
-          </div>
-        </footer>
-      </div>
+<body>
+  <div id="wrap">
+    <!-- 접근성 스킵 내비게이션 -->
+    <div class="skip-nav">
+      <ul>
+        <li><a href="#container">본문 바로가기</a></li>
+        <li><a href="#gnav">주메뉴 바로가기</a></li>
+        <li><a href="#footer">푸터 바로가기</a></li>
+      </ul>
     </div>
-  </body>
+
+    <!-- 헤더 영역 -->
+    <header class="header-dev col-white">
+      <div class="inner">
+        <div class="h_wrap">
+          <div class="h-top">
+            <h1 class="logo">
+              <a href="/index.html">
+                <i class="ico">
+                  <span class="blind">쿨앤쿨</span>
+                </i>
+              </a>
+            </h1>
+            <div class="m-menu">
+              <div id="js-toggle" class="toggle-menu">
+                <div class="menu-line"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="navDev" class="nav-dev" data-lenis-prevent>
+            <ul class="navbar-dev">
+              <li class="has-sub">
+                <a href="#" class="en-600">business</a>
+                <ul class="sub-menu">
+                  <li><a href="business-ad.html" class="en-600">Sales : Dealer</a></li>
+                  <li><a href="business-bpo.html" class="en-600">Sales : Operate</a></li>
+                  <li><a href="business-contents.html" class="en-600">Creative</a></li>
+                  <li><a href="business-logistics.html" class="en-600">Fulfillment</a></li>
+                  <li><a href="business-solution.html" class="en-600">AI Solution</a></li>
+                  <li><a href="business-data-analsysis.html" class="en-600">Data Analysis</a></li>
+                </ul>
+              </li>
+              <li><a href="brand.html" class="en-600">brands</a></li>
+              <li class="has-sub">
+                <a href="#" class="en-600">company</a>
+                <ul class="sub-menu">
+                  <li><a href="company1.html" class="en-600">Overview</a></li>
+                  <li><a href="company2.html" class="en-600">Strengths</a></li>
+                </ul>
+              </li>
+              <li><a href="recruit.html" class="en-600">recruit</a></li>
+              <li class="hidden"><a href="new.html" class="en-600">news</a></li>
+              <li><a href="contact.html" class="en-600">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <link rel="stylesheet" href="css/sub.css" />
+    <main id="container" class="scroller">
+      <div class="sub-top-wrap contact">
+        <div class="sub-top">
+          <div class="badge-type-title sub-inner">
+            <h2 class="badge en-600" data-aos="fade-right" data-aos-delay="100">Contact Us</h2>
+          </div>
+        </div>
+      </div>
+      
+      <section class="sub-section">
+        <div class="sub-title-wrap sub-inner" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="en-600">Bridging brands and the world!</h3>
+          <p class="ko-info">
+            <span class="text-blue">경험 많은 전문가와 AI 기술</span>이 만나 비교 불가능한 서비스를 제공합니다.
+          </p>
+          <p class="en-inco en-300">
+            Experienced Experts Meet AI Technology To Deliver Incomparable Service.
+          </p>
+          <a href="/index.html" class="go-home">
+            <i class="icon-structure05"></i>
+          </a>
+        </div>
+
+        <div class="contact-wrap">
+          <div class="map-wrap" data-aos="fade-up" data-aos-delay="400"></div>
+          <div class="contact">
+            <div class="sub-inner flex">
+              <div class="contact-cnc relative" data-aos="fade-right" data-aos-delay="300">
+                <div>
+                  <strong class="en-700">
+                    grow<br />bigger!
+                  </strong>
+                  <img src="images/with.png" alt="width" class="width-img absolute" />
+                </div>
+                <img src="images/logo.svg" alt="쿨앤쿨" class="cnc-logo" />
+              </div>
+              
+              <div class="contact-info" data-aos="fade-left" data-aos-delay="400">
+                <div class="cnc-office">
+                  <p class="text-blue neo-900">[ 본사 ]</p>
+                  <p class="office-address neo-800">
+                    서울특별시 서초구 강남대로51길 1, 511 TOWER 4층 (서초동)
+                  </p>
+                  <p class="en-400">
+                    Gangnam-daero 51-gil, Seocho-gu, Seoul, Republic of Korea
+                  </p>
+                </div>
+                
+                <ul class="tel-info">
+                  <li>
+                    <b class="en-700">
+                      <span class="text-blue">T</span> 1688-0186
+                    </b>
+                  </li>
+                  <li>
+                    <b class="en-700">
+                      <span class="text-blue">F</span> 02-3474-7679
+                    </b>
+                  </li>
+                  <li>
+                    <b class="en-700">
+                      <span class="text-blue">E</span> help@coolncool.com
+                    </b>
+                  </li>
+                </ul>
+                
+                <div class="cnc-office">
+                  <p class="text-blue neo-900">[ 제 1 물류센터 ]</p>
+                  <p class="office-address neo-800">
+                    경기 이천시 부발읍 황무로 1833번지 175-84 쿨앤쿨파워샵이천물류센터
+                  </p>
+                  <p class="en-400">
+                    175-84, Hwangmu-ro, Bubal-eup, Icheon-si,<br />
+                    Gyeonggi-do, Republic of Korea
+                  </p>
+                </div>
+                
+                <div class="cnc-office">
+                  <p class="text-blue neo-900">[ 제 2 물류센터 ]</p>
+                  <p class="office-address neo-800">
+                    경기 이천시 부발읍 황무로 1833번지 175-102 쿨앤쿨냉장유통센터
+                  </p>
+                  <p class="en-400">
+                    175-102, Hwangmu-ro, Bubal-eup, Icheon-si,<br />
+                    Gyeonggi-do, Republic of Korea
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <div id="footer">
+      <footer>
+        <div class="footer-inner">
+          <div class="f-container">
+            <ul class="f-info">
+              <li>T. 1688-0186</li>
+              <li>A. 서울특별시 서초구 강남대로51길 1, 511 TOWER 4층 (서초동) </li>
+              <li>E. help@coolncool.com</li>
+              <li>F. 02-3474-7679</li>
+            </ul>
+            
+            <ul class="f-contact">
+              <li class="name">커머스 BPO 그룹 | 쿨앤쿨</li>
+              <li>대표이사 : 곽상준</li>
+              <li>사업자번호 : 116-81-6768</li>
+              <li>소프트웨어사업자 : 제818-146851호</li>
+              <li>통신판매업 : 제2012-서울서초-1278호</li>
+            </ul>
+            
+            <ul class="f-contact">
+              <li>건강기능식품판매업 : 서초구청수지505호</li>
+              <li>의료기기판매업 : 서초구보건소3505호</li>
+              <li>서비스표등록 : 특허청 제41-0235142호</li>
+            </ul>
+
+            <div class="f-outer-link">
+              <div class="f-family-site">
+                <button type="button" class="en-600">
+                  FAMILY SITE
+                  <i class="icon-sign01"></i>
+                </button>
+                <div class="family-site-list">
+                  <ul>
+                    <li><a href="https://www.powershop.co.kr/" target="_blank">파워샵</a></li>
+                    <li><a href="https://www.visualist.co.kr/" target="_blank">비주얼리스트</a></li>
+                    <li><a href="http://www.d-mind.kr/" target="_blank">디마인드</a></li>
+                    <li><a href="https://smartstore.naver.com/dbheart" target="_blank">스토어: 더블하트</a></li>
+                    <li><a href="https://smartstore.naver.com/gutk" target="_blank">스토어: 헬로|파세오</a></li>
+					<li><a href="https://smartstore.naver.com/pwshop" target="_blank">스토어: 애경</a></li>
+                    <li><a href="https://smartstore.naver.com/pigeon" target="_blank">스토어: 피죤 공식</a></li>
+                    <li><a href="https://smartstore.naver.com/coolsale/" target="_blank">스토어: 남양 공식</a></li>
+                    <li><a href="https://smartstore.naver.com/vivienonline" target="_blank">스토어: 비비안 공식</a></li>
+                    <li><a href="https://smartstore.naver.com/coolncoolyh" target="_blank">스토어: 유한양행 공식</a></li>
+                    <li><a href="https://smartstore.naver.com/ecolabmall" target="_blank">스토어: 이콜랩 공식</a></li>
+                    <li><a href="https://smartstore.naver.com/dmind" target="_blank">스토어: 디마인드 공식</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <p class="f-copyright en-500">
+              COPYRIGHT ⓒ 1998-2025 COOL&COOL COMMERCE BPO GROUP. ALL RIGHTS RESERVED.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
 </html>

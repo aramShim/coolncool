@@ -1,5 +1,34 @@
 @charset "utf-8";
 
+/* 메인 비디오 모바일 최적화 */
+.main-visual .desktop-video,
+.main-visual .mobile-video,
+.main-visual .fallback-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.main-visual .mobile-video,
+.main-visual .fallback-img {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .main-visual .desktop-video {
+    display: none;
+  }
+  .main-visual .mobile-video {
+    display: block;
+  }
+}
+
 .main-section {
   overflow: hidden;
   background-color: #fff;
@@ -267,6 +296,10 @@
 }
 .section-experiences .main-sub-title {
   color: #fff;
+}
+.section-experiences .korean-text {
+  margin-top: 10px;   /* 영문 문단과의 간격*/
+  font-size: 15px;
 }
 .main-experiences-wrap {
   margin-top: 124px;
