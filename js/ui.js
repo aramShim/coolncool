@@ -15,6 +15,7 @@ $(document).ready(function () {
     topMenu();
   }
   if ($("html.mobile").length > 0) {
+    console.log(1);
     topMenu_m();
   }
 
@@ -32,7 +33,7 @@ $(document).ready(function () {
   }
   AOS.init({
     duration: 600,
-    once: false,
+    once: true,
   });
 });
 //레니스
@@ -83,38 +84,31 @@ function familySiteSelect() {
 }
 
 function topMenu() {
-  const $ganvLi = $(".gnav-list > li");
-  const activeNum = $(".gnav-list > li.active").index();
-
-  $("#gnav").on("mouseleave", function () {
-    if (activeNum >= 0) {
-      $ganvLi.eq(activeNum).addClass("active");
+  $(".has-sub > a").click(function (e) {
+    const $this = $(this);
+    const $thisHref = $this.attr("href");
+    if ($thisHref == "#") {
+      e.preventDefault();
+      e.stopPropagation();
     }
-  });
-  $ganvLi.children("a").on("mouseenter", function () {
-    $ganvLi.removeClass("active");
-    $(this).parent().addClass("active");
-  });
-  $ganvLi.on("mouseleave", function () {
-    $ganvLi.removeClass("active");
   });
 }
 
 function topMenu_m() {
+  console.log(2);
   const $btnMenu = $(".m-menu");
   const $mMenu = $(".header-dev");
 
   $btnMenu.on("click", function () {
-    console.log(11);
-    $(".toggle-menu").toggleClass("on");
+    $(this).find(".toggle-menu").toggleClass("on");
     $mMenu.toggleClass("active");
     $("html, body").toggleClass("overflow-hidden-active");
   });
 
-  //if ($mMenu.hasClass("active")) {
   $(".has-sub > a").click(function (e) {
     e.preventDefault();
     e.stopPropagation();
+
     var $this = $(this);
     var $li = $this.closest("li.has-sub");
     var $subMenu = $li.find(".sub-menu");
@@ -128,7 +122,6 @@ function topMenu_m() {
       $li.addClass("active");
     }
   });
-  //}
 }
 
 function companyAchievements() {

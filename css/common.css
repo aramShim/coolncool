@@ -121,6 +121,7 @@ a:hover {
 }
 *:focus-visible {
   outline: 2px dotted #000;
+  outline-offset: -1px;
 }
 
 ul {

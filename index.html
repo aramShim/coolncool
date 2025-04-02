@@ -1,610 +1,908 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <!-- <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" name="viewport" /> -->
-  <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" /> 
-  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-  <meta content="telephone=no" name="format-detection" />
-  
-  <!-- 네이버 서치어드바이저 -->
-  <meta content="" name="naver-site-verification" />
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0,user-scalable=yes" name="viewport" /> -->
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta content="telephone=no" name="format-detection" />
 
-  <!-- OG Tags -->
-  <meta property="og:url" content="http://www.coolncool.com/" />
-  <meta property="og:title" content="COOLNCool" />
-  <meta property="og:description" content="커머스 BPO, 세일즈, 몰 운영, 디자인, 영상, 풀필먼트 물류, 24시간 AI 콜센터, 솔루션, 자동화 개발" />
-  <meta property="og:image" content="img/opengraph/coolncool_OGP.png" />
-  <meta name="description" content="커머스 BPO, 세일즈, 몰 운영, 디자인, 영상, 풀필먼트 물류, 24시간 AI 콜센터, 솔루션, 자동화 개발" />
+    <!-- 네이버 서치어드바이저 -->
+    <meta content="" name="naver-site-verification" />
 
-  <title>쿨앤쿨 : 커머스 BPO 전문그룹</title>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/cncicon.css" type="text/css" />
-  <link rel="stylesheet" href="css/common.css" type="text/css" />
-  <link rel="stylesheet" href="css/layout.css" type="text/css" />
-  <link rel="stylesheet" href="css/aos.css" type="text/css" />
-  
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="images/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  
-  <!-- JS -->
-  <script src="js/script.js"></script>
-  <script src="js/jquery-3.6.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-  <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
-  <script src="js/ui.js"></script>
-  <script src="js/aos.js"></script>
-</head>
+    <!-- OG Tags -->
+    <meta property="og:url" content="http://www.coolncool.com/" />
+    <meta property="og:title" content="COOLNCool" />
+    <meta
+      property="og:description"
+      content="커머스 BPO, 세일즈, 몰 운영, 디자인, 영상, 풀필먼트 물류, 24시간 AI 콜센터, 솔루션, 자동화 개발"
+    />
+    <meta property="og:image" content="img/opengraph/coolncool_OGP.png" />
+    <meta
+      name="description"
+      content="커머스 BPO, 세일즈, 몰 운영, 디자인, 영상, 풀필먼트 물류, 24시간 AI 콜센터, 솔루션, 자동화 개발"
+    />
 
-<body>
-  <div id="wrap">
-    <!-- Skip Navigation -->
-    <div class="skip-nav">
-      <ul>
-        <li><a href="#container">본문 바로가기</a></li>
-        <li><a href="#gnav">주메뉴 바로가기</a></li>
-        <li><a href="#footer">푸터 바로가기</a></li>
-      </ul>
+    <title>쿨앤쿨 : 커머스 BPO 전문그룹</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/cncicon.css" type="text/css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="css/aos.css" type="text/css" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/aos.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- Skip Navigation -->
+      <div class="skip-nav">
+        <ul>
+          <li><a href="#container">본문 바로가기</a></li>
+          <li><a href="#gnav">주메뉴 바로가기</a></li>
+          <li><a href="#footer">푸터 바로가기</a></li>
+        </ul>
+      </div>
+
+      <!-- Header -->
+      <header class="header-dev col-white">
+        <div class="inner">
+          <div class="h_wrap">
+            <div class="h-top">
+              <h1 class="logo">
+                <a href="/index.html">
+                  <i class="ico"><span class="blind">쿨앤쿨</span></i>
+                </a>
+              </h1>
+              <div class="m-menu">
+                <div id="js-toggle" class="toggle-menu">
+                  <div class="menu-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="navDev" class="nav-dev" data-lenis-prevent>
+              <ul class="navbar-dev">
+                <li class="has-sub">
+                  <a href="#" class="en-600">business</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="business-ad.html" class="en-600">
+                        Sales : Dealer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="business-bpo.html" class="en-600">
+                        Sales : Operate
+                      </a>
+                    </li>
+                    <li>
+                      <a href="business-contents.html" class="en-600">
+                        Creative
+                      </a>
+                    </li>
+                    <li>
+                      <a href="business-logistics.html" class="en-600">
+                        Fulfillment
+                      </a>
+                    </li>
+                    <li>
+                      <a href="business-solution.html" class="en-600">
+                        AI Solution
+                      </a>
+                    </li>
+                    <li>
+                      <a href="business-data-analsysis.html" class="en-600">
+                        Data Analysis
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="brand.html" class="en-600">brands</a></li>
+                <li class="has-sub">
+                  <a href="#" class="en-600">company</a>
+                  <ul class="sub-menu">
+                    <li><a href="company1.html" class="en-600">Overview</a></li>
+                    <li>
+                      <a href="company2.html" class="en-600">Strengths</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="recruit.html" class="en-600">recruit</a></li>
+                <li class="hidden">
+                  <a href="new.html" class="en-600">news</a>
+                </li>
+                <li><a href="contact.html" class="en-600">contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main CSS & JS -->
+      <link rel="stylesheet" href="css/main.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
+
+      <!-- Main Content -->
+      <main id="container" class="scroller">
+        <!-- Section 1: Main Visual -->
+        <section id="section01" class="section main-section relative">
+          <div class="main-visual">
+            <!-- 모바일용 비디오와 데스크톱용 비디오 분리 -->
+            <video class="desktop-video" autoplay loop muted playsinline>
+              <source src="/images/main1.mp4" type="video/mp4" />
+            </video>
+            <video class="mobile-video" autoplay loop muted playsinline>
+              <source src="/images/main1-mobile.mp4" type="video/mp4" />
+            </video>
+
+            <!-- 폴백 이미지 (비디오 로딩 실패 시) -->
+            <img
+              class="fallback-img"
+              src="/images/main1-fallback.jpg"
+              alt="쿨앤쿨 메인 이미지"
+            />
+
+            <div class="visual-copy">
+              <p
+                class="main-copy en-600"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                Beyond
+                <span class="orange en-600">:</span>
+                Commerce
+              </p>
+              <p
+                class="main-sub-copy en-400"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                With 23 Years of Expertise,
+                <br />
+                We Transform Global Brands into Korean Market Leaders,
+                <br />
+                Providing End-to-End Solutions from Strategy to Fulfillment.
+                <br />
+              </p>
+              <img
+                src="images/cnc_group.png"
+                alt="coolncool group"
+                data-aos="fade-up"
+                data-aos-delay="700"
+              />
+            </div>
+            <div class="scroll-down">
+              <p class="en-600 uppercase">scroll down</p>
+              <div class="mouse"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2: Business -->
+        <section id="section02" class="section main-section relative section02">
+          <div class="section02-wrap">
+            <div class="relative main-visual2-wrap">
+              <div class="relative">
+                <div class="circular-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-down-right"
+                  >
+                    <path d="m7 7 10 10" />
+                    <path d="M17 7v10H7" />
+                  </svg>
+                  <svg viewBox="0 0 100 100" class="text-rotate">
+                    <path
+                      d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
+                      id="circle"
+                      fill="none"
+                    ></path>
+                    <text>
+                      <textPath href="#circle" class="en-600" fill="#fff">
+                        COMPANY INTRODUCTION
+                      </textPath>
+                    </text>
+                  </svg>
+                </div>
+                <div class="main-visual2">
+                  <div class="video2-wrap">
+                    <video
+                      autoplay=""
+                      data-keepplaying=""
+                      loop=""
+                      muted=""
+                      playsinline=""
+                    >
+                      <source src="/images/main2.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="business-main-wrap main-inner">
+              <div
+                class="badge-type-title"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <p class="badge en-600">Business</p>
+              </div>
+              <div
+                class="business-main-title"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h3 class="en-600">Beyond Compare Service</h3>
+                <span class="en-400">
+                  Experienced Experts Meet AI Technology To Deliver Incomparable
+                  Service.
+                </span>
+                <p class="neo-800">
+                  경험 많은 전문가와 AI 기술이 만나 비교 불가능한 서비스를
+                  제공합니다.
+                </p>
+              </div>
+
+              <ul class="business-list-wrap grid grid-cols-3">
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a href="/business-ad.html">
+                    <img src="images/business01.png" alt="" />
+                    <div class="business-hover">
+                      <span class="en-400">Commerce</span>
+                      <p class="en-600">Sales : Dealer</p>
+                    </div>
+                  </a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+                  <a href="/business-bpo.html">
+                    <img src="images/business02.png" alt="" />
+                    <div class="business-hover">
+                      <span class="en-400">Commerce</span>
+                      <p class="en-600">Sales : Operate</p>
+                    </div>
+                  </a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+                  <a href="/business-contents.html">
+                    <img src="images/business03.png" alt="" />
+                    <div class="business-hover">
+                      <span class="en-400">Commerce</span>
+                      <p class="en-600">Creative</p>
+                    </div>
+                  </a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a href="/business-logistics.html">
+                    <img src="images/business04.png" alt="" />
+                    <div class="business-hover">
+                      <span class="en-400">Commerce</span>
+                      <p class="en-600">Fulfillment</p>
+                    </div>
+                  </a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+                  <a href="/business-solution.html">
+                    <img src="images/business05.png" alt="" />
+                    <div class="business-hover">
+                      <span class="en-400">Commerce</span>
+                      <p class="en-600">AI Solution</p>
+                    </div>
+                  </a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+                  <a href="/business-data-analsysis.html">
+                    <img src="images/business06.png" alt="" />
+                    <div class="business-hover">
+                      <span class="en-400">Commerce</span>
+                      <p class="en-600">Data Analysis</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: Experiences -->
+        <section
+          id="section03"
+          class="section main-section section-experiences"
+        >
+          <div class="main-inner">
+            <div
+              class="intro-title flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="intro-title-txt">
+                <h2 class="main-title aos-init en-600">
+                  <b>Experiences</b>
+                </h2>
+                <p class="main-sub-title en-300">
+                  From Planning to Results, We Guide Global Brands to Korean
+                  Market Success with Expert Precision.
+                  <br />
+                </p>
+                <p class="main-sub-title neo-600 korean-text">
+                  계획부터 결과까지, 전문적인 정확성으로 글로벌 브랜드의 한국
+                  시장 성공을 안내합니다.
+                  <br />
+                </p>
+              </div>
+            </div>
+
+            <script src="/js/jquery.waypoints.min.js"></script>
+            <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+
+            <div
+              class="main-experiences-wrap"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <ul class="grid grid-cols-4">
+                <li class="flex flex-col items-center justify-center">
+                  <div class="experience-icon">
+                    <img src="images/icon/icon28.png" alt="" />
+                  </div>
+                  <p class="count en-500">137,000</p>
+                  <p class="experience-sub uppercase en-400">
+                    Shipments
+                    <br />
+                    Every Month
+                  </p>
+                </li>
+                <li class="flex flex-col items-center justify-center">
+                  <div class="experience-icon">
+                    <img src="images/icon/icon25.png" alt="" />
+                  </div>
+                  <p class="count en-500">205.9</p>
+                  <p class="experience-sub uppercase en-400">
+                    Billion KRW
+                    <br />
+                    Last 5 Years
+                  </p>
+                </li>
+                <li class="flex flex-col items-center justify-center">
+                  <div class="experience-icon">
+                    <img src="images/icon/icon26.png" alt="" />
+                  </div>
+                  <p class="count en-500">8.23</p>
+                  <p class="experience-sub uppercase en-400">
+                    Million Shipments
+                    <br />
+                    Last 5 Years
+                  </p>
+                </li>
+                <li class="flex flex-col items-center justify-center">
+                  <div class="experience-icon">
+                    <img src="images/icon/icon27.png" alt="" />
+                  </div>
+                  <p class="count en-500">48</p>
+                  <p class="experience-sub uppercase en-400">
+                    commerce
+                    <br />
+                    channels
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4: Brands -->
+        <section id="section04" class="section main-section sec-brand relative">
+          <div class="brand-title">
+            <h2
+              class="main-title aos-init en-600"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <b>Brands</b>
+            </h2>
+            <p
+              class="main-sub-title aos-init en-300"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              Bridging brands and the world!
+            </p>
+          </div>
+
+          <div class="brand-visual">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/main/brand1.png" alt="" />
+                <div class="brand-info-wrap">
+                  <div class="flex flex-col">
+                    <img
+                      src="images/lego_logo.png"
+                      alt=""
+                      class="brand-logo-img"
+                    />
+                    <div class="brand-text">
+                      <p><b class="en-600">LEGO KOREA</b></p>
+                      <p><span class="en-400">Dealer</span></p>
+                      <p class="en-400">2023.4~</p>
+                    </div>
+                    <div class="brand-more-btn">
+                      <a href="" class="inline-flex items-center text-white">
+                        <span class="en-400">more</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-arrow-right size-4"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="m12 5 7 7-7 7" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brand Logo Slider -->
+          <div class="logo-box marquee">
+            <ul class="logo-wrap flex">
+              <li><img src="images/brand-ak.png" alt="애경" /></li>
+              <li><img src="images/brand-pg.png" alt="피죤" /></li>
+              <li><img src="images/brand-ny.png" alt="남양" /></li>
+              <li><img src="images/brand-db.png" alt="더블하트" /></li>
+              <li><img src="images/brand-vv.png" alt="비비안" /></li>
+              <li><img src="images/brand-hello.png" alt="헬로" /></li>
+              <li><img src="images/brand-ak.png" alt="애경" /></li>
+              <li><img src="images/brand-pg.png" alt="피죤" /></li>
+              <li><img src="images/brand-ny.png" alt="남양" /></li>
+              <li><img src="images/brand-db.png" alt="더블하트" /></li>
+              <li><img src="images/brand-vv.png" alt="비비안" /></li>
+              <li><img src="images/brand-hello.png" alt="헬로" /></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 5: News (Hidden) -->
+        <section id="section05" class="section main-section hidden">
+          <div class="main-inner">
+            <div class="intro-title flex flex-col">
+              <div class="intro-title-txt">
+                <h2
+                  class="main-title aos-init en-600"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <b>News</b>
+                </h2>
+                <p
+                  class="main-sub-title aos-init en-400"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  Bridging brands and the world!
+                </p>
+              </div>
+              <a
+                href=""
+                class="go-more aos-init"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <span class="i-go"><i class="icon-arrow30"></i></span>
+              </a>
+            </div>
+
+            <div class="main-news-list">
+              <ul>
+                <li class="aos-init" data-aos="fade-up" data-aos-delay="400">
+                  <a href="">
+                    <div class="photo">
+                      <img src="images/test/news1.webp" alt="" />
+                    </div>
+                    <p class="date en-600">2023.09</p>
+                    <p class="title">
+                      R&D 정부지원과제 선정 E-커머스 물류유통 재고 관리를 위한
+                      AI 기반 대량 이미지처리 RPA 솔루션 개발
+                    </p>
+                  </a>
+                </li>
+                <li class="aos-init" data-aos="fade-up" data-aos-delay="400">
+                  <a href="">
+                    <div class="photo">
+                      <img src="images/test/news2.png" alt="" />
+                    </div>
+                    <p class="date en-600">2023.09</p>
+                    <p class="title">
+                      (주)유한양행 공식 커머스 파트너 계약 체결
+                    </p>
+                  </a>
+                </li>
+                <li class="aos-init" data-aos="fade-up" data-aos-delay="400">
+                  <a href="">
+                    <div class="photo">
+                      <img src="images/test/news3.jpg" alt="" />
+                    </div>
+                    <p class="date en-600">2023.09</p>
+                    <p class="title">레고 주문/정산/통계 프로그램 개발 완료</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- GSAP Animation Script -->
+      <script>
+        gsap.registerPlugin(ScrollTrigger);
+        let mm = gsap.matchMedia();
+
+        // Desktop (1024px and above)
+        mm.add("(min-width: 1024px)", () => {
+          gsap.to(".main-visual2-wrap", {
+            top: "-150px",
+            duration: 1,
+            scrollTrigger: {
+              trigger: "section:nth-of-type(1)",
+              start: "bottom bottom",
+              end: "bottom+=50 bottom+=20",
+              scrub: 3,
+            },
+          });
+        });
+
+        // Tablet (max-width: 1240px)
+        mm.add("(max-width: 1240px)", () => {
+          gsap.to(".main-visual2-wrap", {
+            top: "-20%",
+            duration: 1,
+            scrollTrigger: {
+              trigger: "section:nth-of-type(1)",
+              start: "bottom bottom",
+              end: "bottom+=50 bottom+=20",
+              scrub: 3,
+            },
+          });
+        });
+
+        // Small Tablet (max-width: 768px)
+        mm.add("(max-width: 768)", () => {
+          gsap.to(".main-visual2-wrap", {
+            top: "-26%",
+            duration: 1,
+            scrollTrigger: {
+              trigger: "section:nth-of-type(1)",
+              start: "bottom bottom",
+              end: "bottom+=50 bottom+=20",
+              scrub: 3,
+            },
+          });
+        });
+
+        // Mobile (max-width: 532px)
+        mm.add("(max-width: 532px)", () => {
+          gsap.to(".main-visual2-wrap", {
+            top: "0px",
+            duration: 1,
+            scrollTrigger: {
+              trigger: "section:nth-of-type(1)",
+              start: "bottom bottom",
+              end: "bottom+=50 bottom+=20",
+              scrub: 3,
+            },
+          });
+        });
+
+        // Scroll Down Animation
+        gsap.to(".scroll-down", {
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: "section:nth-of-type(1)",
+            start: "bottom bottom",
+            end: "bottom+=50 bottom+=20",
+            scrub: 3,
+          },
+        });
+      </script>
+
+      <!-- Footer -->
+      <div id="footer">
+        <footer>
+          <div class="footer-inner">
+            <div class="f-container">
+              <ul class="f-info">
+                <li>T. 1688-0186</li>
+                <li>
+                  A. 서울특별시 서초구 강남대로51길 1, 511 TOWER 4층 (서초동)
+                </li>
+                <li>E. help@coolncool.com</li>
+                <li>F. 02-3474-7679</li>
+              </ul>
+
+              <ul class="f-contact">
+                <li class="name">커머스 BPO 그룹 | 쿨앤쿨</li>
+                <li>대표이사 : 곽상준</li>
+                <li>사업자번호 : 116-81-6768</li>
+                <li>소프트웨어사업자 : 제818-146851호</li>
+                <li>통신판매업 : 제2012-서울서초-1278호</li>
+              </ul>
+
+              <ul class="f-contact">
+                <li>건강기능식품판매업 : 서초구청수지505호</li>
+                <li>의료기기판매업 : 서초구보건소3505호</li>
+                <li>서비스표등록 : 특허청 제41-0235142호</li>
+              </ul>
+
+              <div class="f-outer-link">
+                <div class="f-family-site">
+                  <button type="button" class="en-600">
+                    FAMILY SITE
+                    <i class="icon-sign01"></i>
+                  </button>
+                  <div class="family-site-list">
+                    <ul>
+                      <li>
+                        <a href="https://www.powershop.co.kr/" target="_blank">
+                          파워샵
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.visualist.co.kr/" target="_blank">
+                          비주얼리스트
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://www.d-mind.kr/" target="_blank">
+                          디마인드
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/dbheart"
+                          target="_blank"
+                        >
+                          스토어: 더블하트 공식
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/gutk"
+                          target="_blank"
+                        >
+                          스토어: 헬로|파세오 공식
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/pwshop"
+                          target="_blank"
+                        >
+                          스토어: 애경 공식
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/pigeon"
+                          target="_blank"
+                        >
+                          스토어: 피죤 공식
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/coolsale/"
+                          target="_blank"
+                        >
+                          스토어: 남양 공식
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/vivienonline"
+                          target="_blank"
+                        >
+                          스토어: 비비안 공식
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/coolncoolyh"
+                          target="_blank"
+                        >
+                          스토어: 유한양행 공식
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/ecolabmall"
+                          target="_blank"
+                        >
+                          스토어: 이콜랩 공식
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://smartstore.naver.com/dmind"
+                          target="_blank"
+                        >
+                          스토어: 디마인드 공식
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <p class="f-copyright en-500">
+                COPYRIGHT ⓒ 1998-2025 COOL&COOL COMMERCE BPO GROUP. ALL RIGHTS
+                RESERVED.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
 
-    <!-- Header -->
-    <header class="header-dev col-white">
-      <div class="inner">
-        <div class="h_wrap">
-          <div class="h-top">
-            <h1 class="logo">
-              <a href="/index.html">
-                <i class="ico"><span class="blind">쿨앤쿨</span></i>
-              </a>
-            </h1>
-            <div class="m-menu">
-              <div id="js-toggle" class="toggle-menu">
-                <div class="menu-line"></div>
-              </div>
-            </div>
-          </div>
-
-          <div id="navDev" class="nav-dev" data-lenis-prevent>
-            <ul class="navbar-dev">
-              <li class="has-sub">
-                <a href="#" class="en-600">business</a>
-                <ul class="sub-menu">
-                  <li><a href="business-ad.html" class="en-600">Sales : Dealer</a></li>
-                  <li><a href="business-bpo.html" class="en-600">Sales : Operate</a></li>
-                  <li><a href="business-contents.html" class="en-600">Creative</a></li>
-                  <li><a href="business-logistics.html" class="en-600">Fulfillment</a></li>
-                  <li><a href="business-solution.html" class="en-600">AI Solution</a></li>
-                  <li><a href="business-data-analsysis.html" class="en-600">Data Analysis</a></li>
-                </ul>
-              </li>
-              <li><a href="brand.html" class="en-600">brands</a></li>
-              <li class="has-sub">
-                <a href="#" class="en-600">company</a>
-                <ul class="sub-menu">
-                  <li><a href="company1.html" class="en-600">Overview</a></li>
-                  <li><a href="company2.html" class="en-600">Strengths</a></li>
-                </ul>
-              </li>
-              <li><a href="recruit.html" class="en-600">recruit</a></li>
-              <li class="hidden"><a href="new.html" class="en-600">news</a></li>
-              <li><a href="contact.html" class="en-600">contact us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main CSS & JS -->
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Main Content -->
-    <main id="container" class="scroller">
-      <!-- Section 1: Main Visual -->
-      <section id="section01" class="section main-section relative">
-	  
-		<div class="main-visual">
-		  <!-- 모바일용 비디오와 데스크톱용 비디오 분리 -->
-		  <video class="desktop-video" autoplay loop muted playsinline>
-			<source src="/images/main1.mp4" type="video/mp4" />
-		  </video>
-		  <video class="mobile-video" autoplay loop muted playsinline>
-			<source src="/images/main1-mobile.mp4" type="video/mp4" />
-		  </video>
-		  
-		  <!-- 폴백 이미지 (비디오 로딩 실패 시) -->
-		  <img class="fallback-img" src="/images/main1-fallback.jpg" alt="쿨앤쿨 메인 이미지">	  
-	  
-		  <div class="visual-copy">
-            <p class="main-copy en-600" data-aos="fade-up" data-aos-delay="300">
-              Beyond <span class="orange en-600">:</span> Commerce
-            </p>
-            <p class="main-sub-copy en-400" data-aos="fade-up" data-aos-delay="500">
-              With 23 Years of Expertise,<br />We Transform Global Brands into Korean Market Leaders,<br />Providing End-to-End Solutions from Strategy to Fulfillment.<br />
-            </p>
-            <img src="images/cnc_group.png" alt="coolncool group" data-aos="fade-up" data-aos-delay="700" />
-          </div>
-          <div class="scroll-down">
-            <p class="en-600 uppercase">scroll down</p>
-            <div class="mouse"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 2: Business -->
-      <section id="section02" class="section main-section relative section02">
-        <div class="section02-wrap">
-          <div class="relative main-visual2-wrap">
-            <div class="relative">
-              <div class="circular-text">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right">
-                  <path d="m7 7 10 10" />
-                  <path d="M17 7v10H7" />
-                </svg>
-                <svg viewBox="0 0 100 100" class="text-rotate">
-                  <path d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" id="circle" fill="none"></path>
-                  <text>
-                    <textPath href="#circle" class="en-600" fill="#fff">COMPANY INTRODUCTION</textPath>
-                  </text>
-                </svg>
-              </div>
-              <div class="main-visual2">
-                <div class="video2-wrap">
-                  <video autoplay="" data-keepplaying="" loop="" muted="" playsinline="">
-                    <source src="/images/main2.mp4" type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="business-main-wrap main-inner">
-            <div class="badge-type-title" data-aos="fade-up" data-aos-delay="300">
-              <p class="badge en-600">Business</p>
-            </div>
-            <div class="business-main-title" data-aos="fade-up" data-aos-delay="300">
-              <h3 class="en-600">Beyond Compare Service</h3>
-              <span class="en-400">
-                Experienced Experts Meet AI Technology To Deliver Incomparable Service.
-              </span>
-              <p class="neo-800">
-                경험 많은 전문가와 AI 기술이 만나 비교 불가능한 서비스를 제공합니다.
-              </p>
-            </div>
-            
-            <ul class="business-list-wrap grid grid-cols-3">
-              <li data-aos="fade-up" data-aos-delay="300">
-                <a href="/business-ad.html">
-                  <img src="images/business01.png" alt="" />
-                  <div class="business-hover">
-                    <span class="en-400">Commerce</span>
-                    <p class="en-600">Sales : Dealer</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="400">
-                <a href="/business-bpo.html">
-                  <img src="images/business02.png" alt="" />
-                  <div class="business-hover">
-                    <span class="en-400">Commerce</span>
-                    <p class="en-600">Sales : Operate</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="500">
-                <a href="/business-contents.html">
-                  <img src="images/business03.png" alt="" />
-                  <div class="business-hover">
-                    <span class="en-400">Commerce</span>
-                    <p class="en-600">Creative</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="300">
-                <a href="/business-logistics.html">
-                  <img src="images/business04.png" alt="" />
-                  <div class="business-hover">
-                    <span class="en-400">Commerce</span>
-                    <p class="en-600">Fulfillment</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="400">
-                <a href="/business-solution.html">
-                  <img src="images/business05.png" alt="" />
-                  <div class="business-hover">
-                    <span class="en-400">Commerce</span>
-                    <p class="en-600">AI Solution</p>
-                  </div>
-                </a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="500">
-                <a href="/business-data-analsysis.html">
-                  <img src="images/business06.png" alt="" />
-                  <div class="business-hover">
-                    <span class="en-400">Commerce</span>
-                    <p class="en-600">Data Analysis</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 3: Experiences -->
-      <section id="section03" class="section main-section section-experiences">
-        <div class="main-inner" data-aos="fade-up" data-aos-delay="300">
-          <div class="intro-title flex flex-col">
-            <div class="intro-title-txt">
-              <h2 class="main-title aos-init en-600">
-                <b>Experiences</b>
-              </h2>
-              <p class="main-sub-title en-300">
-                From Planning to Results, We Guide Global Brands to Korean Market Success with Expert Precision.<br />
-			 </p>
-			 <p class="main-sub-title neo-600 korean-text">
-			    계획부터 결과까지, 전문적인 정확성으로 글로벌 브랜드의 한국 시장 성공을 안내합니다.<br />
-			 </p>
-            </div>
-          </div>
-          
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-          
-          <div class="main-experiences-wrap">
-            <ul class="grid grid-cols-4">
-              <li class="flex flex-col items-center justify-center">
-                <div class="experience-icon">
-                  <img src="images/icon/icon28.png" alt="" />
-                </div>
-                <p class="count en-500" data-counter="137000">137,000</p>
-                <p class="experience-sub uppercase en-400">Shipments<br>Every Month</p>
-              </li>
-              <li class="flex flex-col items-center justify-center">
-                <div class="experience-icon">
-                  <img src="images/icon/icon25.png" alt="" />
-                </div>
-                <p class="count en-500" data-counter="205.9">205.9</p>
-                <p class="experience-sub uppercase en-400">Billion KRW<br>Last 5 Years</p>
-              </li>
-              <li class="flex flex-col items-center justify-center">
-                <div class="experience-icon">
-                  <img src="images/icon/icon26.png" alt="" />
-                </div>
-                <p class="count en-500" data-counter="8.23">8.23</p>
-                <p class="experience-sub uppercase en-400">Million Shipments<br>Last 5 Years</p>
-              </li>
-              <li class="flex flex-col items-center justify-center">
-                <div class="experience-icon">
-                  <img src="images/icon/icon27.png" alt="" />
-                </div>
-                <p class="count en-500" data-counter="48">48</p>
-                <p class="experience-sub uppercase en-400">commerce<br>channels</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 4: Brands -->
-      <section id="section04" class="section main-section sec-brand relative">
-        <div class="brand-title">
-          <h2 class="main-title aos-init en-600" data-aos="fade-up" data-aos-delay="300">
-            <b>Brands</b>
-          </h2>
-          <p class="main-sub-title aos-init en-300" data-aos="fade-up" data-aos-delay="400">
-            Bridging brands and the world!
-          </p>
-        </div>
-        
-        <div class="brand-visual">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="images/main/brand1.png" alt="" />
-              <div class="brand-info-wrap">
-                <div class="flex flex-col">
-                  <img src="images/lego_logo.png" alt="" class="brand-logo-img" />
-                  <div class="brand-text">
-                    <p><b class="en-600">LEGO KOREA</b></p>
-                    <p><span class="en-400">Dealer</span></p>
-                    <p class="en-400">2023.4~</p>
-                  </div>
-                  <div class="brand-more-btn">
-                    <a href="" class="inline-flex items-center text-white">
-                      <span class="en-400">more</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-4">
-                        <path d="M5 12h14" />
-                        <path d="m12 5 7 7-7 7" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Brand Logo Slider -->
-        <div class="logo-box marquee">
-          <ul class="logo-wrap flex">
-            <li><img src="images/brand-ak.png" alt="애경" /></li>
-            <li><img src="images/brand-pg.png" alt="피죤" /></li>
-            <li><img src="images/brand-ny.png" alt="남양" /></li>
-            <li><img src="images/brand-db.png" alt="더블하트" /></li>
-            <li><img src="images/brand-vv.png" alt="비비안" /></li>
-            <li><img src="images/brand-hello.png" alt="헬로" /></li>
-            <li><img src="images/brand-ak.png" alt="애경" /></li>
-            <li><img src="images/brand-pg.png" alt="피죤" /></li>
-            <li><img src="images/brand-ny.png" alt="남양" /></li>
-            <li><img src="images/brand-db.png" alt="더블하트" /></li>
-            <li><img src="images/brand-vv.png" alt="비비안" /></li>
-            <li><img src="images/brand-hello.png" alt="헬로" /></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Section 5: News (Hidden) -->
-      <section id="section05" class="section main-section hidden">
-        <div class="main-inner">
-          <div class="intro-title flex flex-col">
-            <div class="intro-title-txt">
-              <h2 class="main-title aos-init en-600" data-aos="fade-up" data-aos-delay="300">
-                <b>News</b>
-              </h2>
-              <p class="main-sub-title aos-init en-400" data-aos="fade-up" data-aos-delay="400">
-                Bridging brands and the world!
-              </p>
-            </div>
-            <a href="" class="go-more aos-init" data-aos="fade-up" data-aos-delay="500">
-              <span class="i-go"><i class="icon-arrow30"></i></span>
-            </a>
-          </div>
-          
-          <div class="main-news-list">
-            <ul>
-              <li class="aos-init" data-aos="fade-up" data-aos-delay="400">
-                <a href="">
-                  <div class="photo">
-                    <img src="images/test/news1.webp" alt="" />
-                  </div>
-                  <p class="date en-600">2023.09</p>
-                  <p class="title">
-                    R&D 정부지원과제 선정 E-커머스 물류유통 재고 관리를 위한 AI 기반 대량 이미지처리 RPA 솔루션 개발
-                  </p>
-                </a>
-              </li>
-              <li class="aos-init" data-aos="fade-up" data-aos-delay="400">
-                <a href="">
-                  <div class="photo">
-                    <img src="images/test/news2.png" alt="" />
-                  </div>
-                  <p class="date en-600">2023.09</p>
-                  <p class="title">
-                    (주)유한양행 공식 커머스 파트너 계약 체결
-                  </p>
-                </a>
-              </li>
-              <li class="aos-init" data-aos="fade-up" data-aos-delay="400">
-                <a href="">
-                  <div class="photo">
-                    <img src="images/test/news3.jpg" alt="" />
-                  </div>
-                  <p class="date en-600">2023.09</p>
-                  <p class="title">레고 주문/정산/통계 프로그램 개발 완료</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- GSAP Animation Script -->
+    <!-- Responsive 미디어 쿼리와 video source 동적 처리를 위한 스크립트 -->
     <script>
-      gsap.registerPlugin(ScrollTrigger);
-      let mm = gsap.matchMedia();
+      document.addEventListener("DOMContentLoaded", function () {
+        // 디바이스 체크 및 비디오 소스 최적화
+        const isMobile = window.innerWidth < 768;
+        const desktopVideo = document.querySelector(".desktop-video");
+        const mobileVideo = document.querySelector(".mobile-video");
+        const fallbackImg = document.querySelector(".fallback-img");
 
-      // Desktop (1024px and above)
-      mm.add("(min-width: 1024px)", () => {
-        gsap.to(".main-visual2-wrap", {
-          top: "-150px",
-          duration: 1,
-          scrollTrigger: {
-            trigger: "section:nth-of-type(1)",
-            start: "bottom bottom",
-            end: "bottom+=50 bottom+=20",
-            scrub: 3,
-          },
+        // 디바이스에 따라 적절한 비디오 표시
+        if (isMobile) {
+          desktopVideo.style.display = "none";
+          mobileVideo.style.display = "block";
+        } else {
+          desktopVideo.style.display = "block";
+          mobileVideo.style.display = "none";
+        }
+
+        // 비디오 로딩 실패 시 폴백 이미지 표시
+        const handleVideoError = function (video) {
+          video.style.display = "none";
+          fallbackImg.style.display = "block";
+        };
+
+        desktopVideo.addEventListener("error", function () {
+          handleVideoError(desktopVideo);
         });
-      });
 
-      // Tablet (max-width: 1240px)
-      mm.add("(max-width: 1240px)", () => {
-        gsap.to(".main-visual2-wrap", {
-          top: "-20%",
-          duration: 1,
-          scrollTrigger: {
-            trigger: "section:nth-of-type(1)",
-            start: "bottom bottom",
-            end: "bottom+=50 bottom+=20",
-            scrub: 3,
-          },
+        mobileVideo.addEventListener("error", function () {
+          handleVideoError(mobileVideo);
         });
-      });
 
-      // Small Tablet (max-width: 768px)
-      mm.add("(max-width: 768)", () => {
-        gsap.to(".main-visual2-wrap", {
-          top: "-26%",
-          duration: 1,
-          scrollTrigger: {
-            trigger: "section:nth-of-type(1)",
-            start: "bottom bottom",
-            end: "bottom+=50 bottom+=20",
-            scrub: 3,
-          },
+        // 윈도우 리사이즈 시 비디오 소스 재조정
+        window.addEventListener("resize", function () {
+          const isNowMobile = window.innerWidth < 768;
+          if (isNowMobile && desktopVideo.style.display !== "none") {
+            desktopVideo.style.display = "none";
+            mobileVideo.style.display = "block";
+          } else if (!isNowMobile && mobileVideo.style.display !== "none") {
+            desktopVideo.style.display = "block";
+            mobileVideo.style.display = "none";
+          }
         });
-      });
-
-      // Mobile (max-width: 532px)
-      mm.add("(max-width: 532px)", () => {
-        gsap.to(".main-visual2-wrap", {
-          top: "0px",
-          duration: 1,
-          scrollTrigger: {
-            trigger: "section:nth-of-type(1)",
-            start: "bottom bottom",
-            end: "bottom+=50 bottom+=20",
-            scrub: 3,
-          },
-        });
-      });
-
-      // Scroll Down Animation
-      gsap.to(".scroll-down", {
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: "section:nth-of-type(1)",
-          start: "bottom bottom",
-          end: "bottom+=50 bottom+=20",
-          scrub: 3,
-        },
       });
     </script>
-
-    <!-- Footer -->
-    <div id="footer">
-      <footer>
-        <div class="footer-inner">
-          <div class="f-container">
-            <ul class="f-info">
-              <li>T. 1688-0186</li>
-              <li>A. 서울특별시 서초구 강남대로51길 1, 511 TOWER 4층 (서초동) </li>
-              <li>E. help@coolncool.com</li>
-              <li>F. 02-3474-7679</li>
-            </ul>
-            
-            <ul class="f-contact">
-              <li class="name">커머스 BPO 그룹 | 쿨앤쿨</li>
-              <li>대표이사 : 곽상준</li>
-              <li>사업자번호 : 116-81-6768</li>
-              <li>소프트웨어사업자 : 제818-146851호</li>
-              <li>통신판매업 : 제2012-서울서초-1278호</li>
-            </ul>
-            
-            <ul class="f-contact">
-              <li>건강기능식품판매업 : 서초구청수지505호</li>
-              <li>의료기기판매업 : 서초구보건소3505호</li>
-              <li>서비스표등록 : 특허청 제41-0235142호</li>
-            </ul>
-
-            <div class="f-outer-link">
-              <div class="f-family-site">
-                <button type="button" class="en-600">
-                  FAMILY SITE
-                  <i class="icon-sign01"></i>
-                </button>
-                <div class="family-site-list">
-                  <ul>
-                    <li><a href="https://www.powershop.co.kr/" target="_blank">파워샵</a></li>
-                    <li><a href="https://www.visualist.co.kr/" target="_blank">비주얼리스트</a></li>
-                    <li><a href="http://www.d-mind.kr/" target="_blank">디마인드</a></li>
-                    <li><a href="https://smartstore.naver.com/dbheart" target="_blank">스토어: 더블하트 공식</a></li>
-                    <li><a href="https://smartstore.naver.com/gutk" target="_blank">스토어: 헬로|파세오 공식</a></li>
-					<li><a href="https://smartstore.naver.com/pwshop" target="_blank">스토어: 애경 공식</a></li>
-                    <li><a href="https://smartstore.naver.com/pigeon" target="_blank">스토어: 피죤 공식</a></li>
-                    <li><a href="https://smartstore.naver.com/coolsale/" target="_blank">스토어: 남양 공식</a></li>
-                    <li><a href="https://smartstore.naver.com/vivienonline" target="_blank">스토어: 비비안 공식</a></li>
-                    <li><a href="https://smartstore.naver.com/coolncoolyh" target="_blank">스토어: 유한양행 공식</a></li>
-                    <li><a href="https://smartstore.naver.com/ecolabmall" target="_blank">스토어: 이콜랩 공식</a></li>
-                    <li><a href="https://smartstore.naver.com/dmind" target="_blank">스토어: 디마인드 공식</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <p class="f-copyright en-500">
-              COPYRIGHT ⓒ 1998-2025 COOL&COOL COMMERCE BPO GROUP. ALL RIGHTS RESERVED.
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </div>
-  
-  
-<!-- Responsive 미디어 쿼리와 video source 동적 처리를 위한 스크립트 -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // 디바이스 체크 및 비디오 소스 최적화
-  const isMobile = window.innerWidth < 768;
-  const desktopVideo = document.querySelector('.desktop-video');
-  const mobileVideo = document.querySelector('.mobile-video');
-  const fallbackImg = document.querySelector('.fallback-img');
-  
-  // 디바이스에 따라 적절한 비디오 표시
-  if (isMobile) {
-    desktopVideo.style.display = 'none';
-    mobileVideo.style.display = 'block';
-  } else {
-    desktopVideo.style.display = 'block';
-    mobileVideo.style.display = 'none';
-  }
-  
-  // 비디오 로딩 실패 시 폴백 이미지 표시
-  const handleVideoError = function(video) {
-    video.style.display = 'none';
-    fallbackImg.style.display = 'block';
-  };
-  
-  desktopVideo.addEventListener('error', function() {
-    handleVideoError(desktopVideo);
-  });
-  
-  mobileVideo.addEventListener('error', function() {
-    handleVideoError(mobileVideo);
-  });
-  
-  // 윈도우 리사이즈 시 비디오 소스 재조정
-  window.addEventListener('resize', function() {
-    const isNowMobile = window.innerWidth < 768;
-    if (isNowMobile && desktopVideo.style.display !== 'none') {
-      desktopVideo.style.display = 'none';
-      mobileVideo.style.display = 'block';
-    } else if (!isNowMobile && mobileVideo.style.display !== 'none') {
-      desktopVideo.style.display = 'block';
-      mobileVideo.style.display = 'none';
-    }
-  });
-});
-</script>  
-  
-</body>
+  </body>
 </html>
-
